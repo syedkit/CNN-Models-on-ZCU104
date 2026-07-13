@@ -1,0 +1,1067 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Apr  2 20:11:32 2026
+# Process ID         : 12324
+# Current directory  : D:/vivado_research_project/RESNET50/RESNET50_VIVADO/RESNET50_VIVADO.runs/synth_1
+# Command line       : vivado.exe -log resnet50_bottleneck.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source resnet50_bottleneck.tcl
+# Log file           : D:/vivado_research_project/RESNET50/RESNET50_VIVADO/RESNET50_VIVADO.runs/synth_1/resnet50_bottleneck.vds
+# Journal file       : D:/vivado_research_project/RESNET50/RESNET50_VIVADO/RESNET50_VIVADO.runs/synth_1\vivado.jou
+# Running On         : ARSHAD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-1335U
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16794 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27532 MB
+# Available Virtual  : 13074 MB
+#-----------------------------------------------------------
+source resnet50_bottleneck.tcl -notrace
+create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 505.223 ; gain = 210.941
+Command: synth_design -top resnet50_bottleneck -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4476
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1009.656 ; gain = 499.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck' [D:/vivado_research_project/RESNET50/resnet50_bottleneck.v:9]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_local_in_RAM_AUTO_1R1W' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_local_in_RAM_AUTO_1R1W.v:7]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_local_in_RAM_AUTO_1R1W' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_local_in_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_local_out_RAM_AUTO_1R1W' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_local_out_RAM_AUTO_1R1W.v:7]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_local_out_RAM_AUTO_1R1W' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_local_out_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_flow_control_loop_pipe_sequential_init' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_flow_control_loop_pipe_sequential_init' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_55_4' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_55_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_55_4' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_55_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_61_5' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_61_5.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_61_5' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_61_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_control_s_axi' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_control_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_research_project/RESNET50/resnet50_bottleneck_control_s_axi.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_control_s_axi' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:9]
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter CONSERVATIVE bound to: 1 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 0 - type: integer 
+	Parameter USER_MAXREQS bound to: 7 - type: integer 
+	Parameter CH0_USER_DW bound to: 16 - type: integer 
+	Parameter CH0_USER_AW bound to: 64 - type: integer 
+	Parameter CH0_NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter CH0_NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter CH0_USER_RFIFONUM_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_load' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:284]
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter BUS_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DW bound to: 16 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_LEN_WIDTH bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 7 - type: integer 
+	Parameter USER_RFIFONUM_WIDTH bound to: 10 - type: integer 
+	Parameter BUFFER_IMPL bound to: block - type: string 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_fifo' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2101]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_srl' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2314]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_srl' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_fifo' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_reg_slice' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1997]
+	Parameter DATA_WIDTH bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_reg_slice' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_fifo__parameterized0' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2101]
+	Parameter DATA_WIDTH bound to: 96 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_srl__parameterized0' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2314]
+	Parameter DATA_WIDTH bound to: 96 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_srl__parameterized0' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_fifo__parameterized0' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_fifo__parameterized1' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2101]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 34 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_mem' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2354]
+	Parameter MEM_STYLE bound to: block - type: string 
+	Parameter DATA_WIDTH bound to: 34 - type: integer 
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_mem' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_fifo__parameterized1' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_load' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_read' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:782]
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter BUS_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_LEN_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter ID0_NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_READ_PORTS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_fifo__parameterized2' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2101]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_srl__parameterized1' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2314]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_srl__parameterized1' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_fifo__parameterized2' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_burst_converter' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1036]
+	Parameter ID_WIDTH bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter LEN_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 1 - type: integer 
+	Parameter MAX_BURST_LEN bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_burst_sequential' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1642]
+	Parameter ID_WIDTH bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter LEN_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 1 - type: integer 
+	Parameter MAX_BURST_LEN bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized0' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1997]
+	Parameter DATA_WIDTH bound to: 97 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized0' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_burst_sequential' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1642]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_burst_converter' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1036]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized1' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1997]
+	Parameter DATA_WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized1' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi_read' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:782]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem0_m_axi' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:9]
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter CONSERVATIVE bound to: 1 - type: integer 
+	Parameter MAX_READ_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter NUM_READ_OUTSTANDING bound to: 0 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter USER_MAXREQS bound to: 4 - type: integer 
+	Parameter CH0_USER_DW bound to: 16 - type: integer 
+	Parameter CH0_USER_AW bound to: 64 - type: integer 
+	Parameter CH0_NUM_READ_OUTSTANDING bound to: 16 - type: integer 
+	Parameter CH0_NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter CH0_USER_RFIFONUM_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_store' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:318]
+	Parameter CONSERVATIVE bound to: 1 - type: integer 
+	Parameter C_TARGET_ADDR bound to: 0 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter BUS_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_DW bound to: 16 - type: integer 
+	Parameter USER_AW bound to: 64 - type: integer 
+	Parameter USER_LEN_WIDTH bound to: 32 - type: integer 
+	Parameter USER_MAXREQS bound to: 4 - type: integer 
+	Parameter BUFFER_IMPL bound to: block - type: string 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized0' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized0' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized0' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized0' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized1' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+	Parameter DATA_WIDTH bound to: 18 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized1' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+	Parameter DATA_WIDTH bound to: 18 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized1' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized1' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized2' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+	Parameter DATA_WIDTH bound to: 96 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized2' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+	Parameter DATA_WIDTH bound to: 96 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized2' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized2' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized3' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized3' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized3' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized3' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized4' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized4' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized4' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized4' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized5' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized5' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized5' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized5' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_store' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_write' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:1099]
+	Parameter CONSERVATIVE bound to: 1 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_USER_VALUE bound to: 0 - type: integer 
+	Parameter C_PROT_VALUE bound to: 0 - type: integer 
+	Parameter C_CACHE_VALUE bound to: 3 - type: integer 
+	Parameter BUS_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter USER_LEN_WIDTH bound to: 32 - type: integer 
+	Parameter MAX_WRITE_BURST_LENGTH bound to: 16 - type: integer 
+	Parameter NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter ID0_NUM_WRITE_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_WRITE_PORTS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_burst_converter' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:1394]
+	Parameter ID_WIDTH bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter LEN_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 1 - type: integer 
+	Parameter MAX_BURST_LEN bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_burst_sequential' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2000]
+	Parameter ID_WIDTH bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter LEN_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 1 - type: integer 
+	Parameter MAX_BURST_LEN bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_reg_slice' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2622]
+	Parameter DATA_WIDTH bound to: 97 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_reg_slice' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_burst_sequential' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2000]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_burst_converter' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_throttle' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2353]
+	Parameter CONSERVATIVE bound to: 1 - type: integer 
+	Parameter ID_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter NUM_OUTSTANDING bound to: 16 - type: integer 
+	Parameter ID0_NUM_OUTSTANDING bound to: 16 - type: integer 
+	Parameter NUM_PORTS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized6' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized6' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_srl__parameterized6' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_fifo__parameterized6' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized0' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2622]
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized0' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized1' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2622]
+	Parameter DATA_WIDTH bound to: 73 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized1' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_throttle' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2353]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized2' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2622]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized2' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi_write' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:1099]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_gmem1_m_axi' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_fifo_w16_d1024_A' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_fifo_w16_d1024_A.v:10]
+INFO: [Synth 8-6157] synthesizing module 'resnet50_bottleneck_fifo_w16_d1024_A_ram' [D:/vivado_research_project/RESNET50/resnet50_bottleneck_fifo_w16_d1024_A.v:185]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter DEPTH bound to: 1023 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_fifo_w16_d1024_A_ram' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_fifo_w16_d1024_A.v:185]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck_fifo_w16_d1024_A' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck_fifo_w16_d1024_A.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'resnet50_bottleneck' (0#1) [D:/vivado_research_project/RESNET50/resnet50_bottleneck.v:9]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [D:/vivado_research_project/RESNET50/resnet50_bottleneck_control_s_axi.v:339]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWVALID driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[63] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[62] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[61] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[60] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[59] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[58] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[57] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[56] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[55] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[54] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[53] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[52] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[51] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[50] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[49] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[48] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[47] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[46] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[45] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[44] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[43] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[42] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[41] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[40] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[39] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[38] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[37] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[36] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[35] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[34] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[33] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[32] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[31] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[30] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[29] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[28] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[27] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[26] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[25] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[24] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[23] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[22] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[21] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[20] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[19] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[18] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[17] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[16] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[15] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[14] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[13] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[12] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[11] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[10] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[9] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[8] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[7] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[6] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[5] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[4] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[3] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[2] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[1] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWADDR[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWID[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLEN[7] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLEN[6] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLEN[5] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLEN[4] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLEN[3] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLEN[2] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLEN[1] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLEN[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWSIZE[2] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWSIZE[1] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWSIZE[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWBURST[1] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWBURST[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLOCK[1] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWLOCK[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWCACHE[3] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWCACHE[2] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWCACHE[1] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWCACHE[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWPROT[2] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWPROT[1] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWPROT[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWQOS[3] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWQOS[2] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWQOS[1] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWQOS[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWREGION[3] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWREGION[2] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWREGION[1] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWREGION[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_AWUSER[0] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_WVALID driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_WDATA[31] driven by constant 0
+WARNING: [Synth 8-3917] design resnet50_bottleneck has port m_axi_gmem2_WDATA[30] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[7] in module resnet50_bottleneck_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[6] in module resnet50_bottleneck_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[5] in module resnet50_bottleneck_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[4] in module resnet50_bottleneck_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[3] in module resnet50_bottleneck_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[2] in module resnet50_bottleneck_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[1] in module resnet50_bottleneck_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[0] in module resnet50_bottleneck_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module resnet50_bottleneck_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module resnet50_bottleneck_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module resnet50_bottleneck_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module resnet50_bottleneck_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARREADY in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RID[0] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[31] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[30] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[29] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[28] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[27] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[26] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[25] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[24] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[23] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[22] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[21] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[20] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[19] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[18] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[17] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[16] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[15] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[14] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[13] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[12] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[11] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[10] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[9] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[8] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[7] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[6] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[5] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[4] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[3] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[2] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[1] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[0] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RRESP[1] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RRESP[0] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RLAST in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RUSER[0] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RVALID in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[63] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[62] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[61] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[60] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[59] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[58] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[57] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[56] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[55] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[54] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[53] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[52] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[51] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[50] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[49] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[48] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[47] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[46] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[45] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[44] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[43] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[42] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[41] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[40] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[39] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[38] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[37] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[36] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[35] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[34] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[33] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[32] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[31] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[30] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[29] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[28] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[27] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[26] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[25] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[24] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[23] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[22] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[21] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[20] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[19] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[18] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[17] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[16] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_ARADDR[15] in module resnet50_bottleneck_gmem1_m_axi is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1164.848 ; gain = 654.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1164.848 ; gain = 654.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1164.848 ; gain = 654.719
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_pp0_iter9_reg_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:467]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_pp0_iter8_reg_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:466]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_pp0_iter7_reg_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:465]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_pp0_iter6_reg_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:464]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_pp0_iter5_reg_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:463]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_pp0_iter4_reg_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:462]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_pp0_iter3_reg_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:461]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_pp0_iter2_reg_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:460]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_pp0_iter1_reg_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:446]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ch_2_reg_236_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3.v:445]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln55_reg_115_reg' and it is trimmed from '9' to '8' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_55_4.v:141]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'resnet50_bottleneck_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'resnet50_bottleneck_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resnet50_bottleneck_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resnet50_bottleneck_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "resnet50_bottleneck_local_out_RAM_AUTO_1R1W:/ram_reg" of size (depth=256 x width=15) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'resnet50_bottleneck_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'resnet50_bottleneck_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resnet50_bottleneck_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resnet50_bottleneck_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1378.062 ; gain = 867.934
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 2     
+	   2 Input   52 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   20 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 5     
+	   3 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 5     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 6     
+	   2 Input    5 Bit       Adders := 21    
+	   2 Input    4 Bit       Adders := 11    
+	   2 Input    3 Bit       Adders := 10    
+	   2 Input    2 Bit       Adders := 9     
+	   3 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               97 Bit    Registers := 4     
+	               96 Bit    Registers := 2     
+	               73 Bit    Registers := 2     
+	               64 Bit    Registers := 11    
+	               52 Bit    Registers := 2     
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 3     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 17    
+	               20 Bit    Registers := 4     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               15 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 11    
+	                9 Bit    Registers := 10    
+	                8 Bit    Registers := 20    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 8     
+	                5 Bit    Registers := 19    
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 163   
++---RAMs : 
+	              15K Bit	(1023 X 16 bit)          RAMs := 1     
+	               8K Bit	(255 X 34 bit)          RAMs := 1     
+	               4K Bit	(256 X 16 bit)          RAMs := 1     
+	               3K Bit	(256 X 15 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   97 Bit        Muxes := 2     
+	   2 Input   73 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 6     
+	   2 Input   52 Bit        Muxes := 2     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 2     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 7     
+	   2 Input    9 Bit        Muxes := 2     
+	   4 Input    9 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 10    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 9     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 10    
+	   2 Input    2 Bit        Muxes := 119   
+	   3 Input    2 Bit        Muxes := 22    
+	   4 Input    2 Bit        Muxes := 8     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 186   
+	   5 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2655]
+WARNING: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [D:/vivado_research_project/RESNET50/resnet50_bottleneck_gmem1_m_axi.v:2676]
+INFO: [Synth 8-6904] The RAM "resnet50_bottleneck/local_out_U/ram_reg" of size (depth=256 x width=15) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+RAM ("resnet50_bottleneck/local_in_U/ram_reg") is too shallow (depth = 256) to use URAM. Choosing BRAM instead of URAM 
+RAM ("skip_connection_fifo_fifo_U/U_resnet50_bottleneck_fifo_w16_d1024_A_ram/mem_reg") is too shallow (depth = 1023) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-6904] The RAM "resnet50_bottleneck/local_out_U/ram_reg" of size (depth=256 x width=15) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module resnet50_bottleneck_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module resnet50_bottleneck_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 2114.488 ; gain = 1604.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------+----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                 | RTL Object                                         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------+----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|resnet50_bottleneck         | local_in_U/ram_reg                                 | 256 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|gmem0_m_axi_U               | load_unit_0/buff_rdata/U_fifo_mem/mem_reg          | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |                 | 
+|skip_connection_fifo_fifo_U | U_resnet50_bottleneck_fifo_w16_d1024_A_ram/mem_reg | 1023 x 16(READ_FIRST)  | W |   | 1023 x 16(WRITE_FIRST) |   | R | Port A and B     | 1      | 0      | 1               | 
++----------------------------+----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------+---------------------+-----------+----------------------+-----------------+
+|Module Name         | RTL Object          | Inference | Size (Depth x Width) | Primitives      | 
++--------------------+---------------------+-----------+----------------------+-----------------+
+|resnet50_bottleneck | local_out_U/ram_reg | Implied   | 256 x 15             | RAM256X1S x 15  | 
++--------------------+---------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 2114.488 ; gain = 1604.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------+----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                 | RTL Object                                         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------+----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|resnet50_bottleneck         | local_in_U/ram_reg                                 | 256 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
+|gmem0_m_axi_U               | load_unit_0/buff_rdata/U_fifo_mem/mem_reg          | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      |                 | 
+|skip_connection_fifo_fifo_U | U_resnet50_bottleneck_fifo_w16_d1024_A_ram/mem_reg | 1023 x 16(READ_FIRST)  | W |   | 1023 x 16(WRITE_FIRST) |   | R | Port A and B     | 1      | 0      | 1               | 
++----------------------------+----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++--------------------+---------------------+-----------+----------------------+-----------------+
+|Module Name         | RTL Object          | Inference | Size (Depth x Width) | Primitives      | 
++--------------------+---------------------+-----------+----------------------+-----------------+
+|resnet50_bottleneck | local_out_U/ram_reg | Implied   | 256 x 15             | RAM256X1S x 15  | 
++--------------------+---------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance local_in_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance skip_connection_fifo_fifo_U/U_resnet50_bottleneck_fifo_w16_d1024_A_ram/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 2114.488 ; gain = 1604.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 2278.352 ; gain = 1768.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 2278.352 ; gain = 1768.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 2278.352 ; gain = 1768.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 2278.352 ; gain = 1768.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 2278.352 ; gain = 1768.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 2278.352 ; gain = 1768.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------+----------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name         | RTL Name                                                                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------+----------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|resnet50_bottleneck | grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3_fu_151/ch_2_reg_236_pp0_iter9_reg_reg[7]    | 9      | 7     | NO           | NO                 | YES               | 7      | 0       | 
+|resnet50_bottleneck | grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3_fu_151/ch_2_reg_236_pp0_iter9_reg_reg[0]    | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resnet50_bottleneck | grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3_fu_151/ap_loop_exit_ready_pp0_iter9_reg_reg | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|resnet50_bottleneck | grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_61_5_fu_167/ap_loop_exit_ready_pp0_iter6_reg_reg | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++--------------------+----------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[14] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[5]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[14] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[14] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[30] | 18     | 18         | 0      | 18      | 0      | 0      | 0      | 
+|dsrl__6     | mem_reg[2]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[14] | 36     | 36         | 36     | 0       | 0      | 0      | 0      | 
+|dsrl__8     | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__9     | mem_reg[2]  | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__10    | mem_reg[14] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY8    |    94|
+|3     |LUT1      |    71|
+|4     |LUT2      |   248|
+|5     |LUT3      |   815|
+|6     |LUT4      |   453|
+|7     |LUT5      |   301|
+|8     |LUT6      |   439|
+|9     |MUXF7     |     1|
+|10    |RAM256X1S |    15|
+|11    |RAMB18E2  |     3|
+|12    |SRL16E    |   275|
+|13    |SRLC32E   |    17|
+|14    |FDRE      |  2933|
+|15    |FDSE      |    26|
+|16    |IBUF      |    93|
+|17    |OBUF      |  1222|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------------+-----------------------------------------------------------------+------+
+|      |Instance                                                  |Module                                                           |Cells |
++------+----------------------------------------------------------+-----------------------------------------------------------------+------+
+|1     |top                                                       |                                                                 |  7007|
+|2     |  control_s_axi_U                                         |resnet50_bottleneck_control_s_axi                                |   906|
+|3     |  gmem0_m_axi_U                                           |resnet50_bottleneck_gmem0_m_axi                                  |  1609|
+|4     |    bus_read                                              |resnet50_bottleneck_gmem0_m_axi_read                             |  1050|
+|5     |      \ost_ctrl_gen[0].fifo_burst                         |resnet50_bottleneck_gmem0_m_axi_fifo__parameterized2             |    45|
+|6     |        U_fifo_srl                                        |resnet50_bottleneck_gmem0_m_axi_srl__parameterized1              |     2|
+|7     |      \ost_ctrl_gen[0].fifo_rctl                          |resnet50_bottleneck_gmem0_m_axi_fifo__parameterized2_4           |    32|
+|8     |      rreq_burst_conv                                     |resnet50_bottleneck_gmem0_m_axi_burst_converter                  |   861|
+|9     |        burst_sequential                                  |resnet50_bottleneck_gmem0_m_axi_burst_sequential                 |   861|
+|10    |          rs_req                                          |resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized0        |   285|
+|11    |      rs_rdata                                            |resnet50_bottleneck_gmem0_m_axi_reg_slice__parameterized1        |   112|
+|12    |    load_unit_0                                           |resnet50_bottleneck_gmem0_m_axi_load                             |   559|
+|13    |      buff_rdata                                          |resnet50_bottleneck_gmem0_m_axi_fifo__parameterized1             |    97|
+|14    |        U_fifo_mem                                        |resnet50_bottleneck_gmem0_m_axi_mem                              |     4|
+|15    |      \bus_wide_gen.rreq_offset                           |resnet50_bottleneck_gmem0_m_axi_fifo                             |    76|
+|16    |        U_fifo_srl                                        |resnet50_bottleneck_gmem0_m_axi_srl                              |    37|
+|17    |      \bus_wide_gen.rs_rdata_int                          |resnet50_bottleneck_gmem0_m_axi_reg_slice                        |   117|
+|18    |      fifo_rreq                                           |resnet50_bottleneck_gmem0_m_axi_fifo__parameterized0             |   165|
+|19    |        U_fifo_srl                                        |resnet50_bottleneck_gmem0_m_axi_srl__parameterized0              |   131|
+|20    |  gmem1_m_axi_U                                           |resnet50_bottleneck_gmem1_m_axi                                  |  2267|
+|21    |    bus_write                                             |resnet50_bottleneck_gmem1_m_axi_write                            |  1388|
+|22    |      \fifo_resp_gen[0].fifo_resp                         |resnet50_bottleneck_gmem1_m_axi_fifo__parameterized4_2           |    46|
+|23    |        U_fifo_srl                                        |resnet50_bottleneck_gmem1_m_axi_srl__parameterized4_3            |     5|
+|24    |      rs_resp                                             |resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized2        |    10|
+|25    |      wreq_burst_conv                                     |resnet50_bottleneck_gmem1_m_axi_burst_converter                  |   861|
+|26    |        burst_sequential                                  |resnet50_bottleneck_gmem1_m_axi_burst_sequential                 |   861|
+|27    |          rs_req                                          |resnet50_bottleneck_gmem1_m_axi_reg_slice                        |   286|
+|28    |      wreq_throttle                                       |resnet50_bottleneck_gmem1_m_axi_throttle                         |   471|
+|29    |        \fifo_burst_gen[0].fifo_req                       |resnet50_bottleneck_gmem1_m_axi_fifo__parameterized6             |   168|
+|30    |          U_fifo_srl                                      |resnet50_bottleneck_gmem1_m_axi_srl__parameterized6              |   125|
+|31    |        rs_burst                                          |resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized0        |    35|
+|32    |        rs_req                                            |resnet50_bottleneck_gmem1_m_axi_reg_slice__parameterized1        |   213|
+|33    |    store_unit_0                                          |resnet50_bottleneck_gmem1_m_axi_store                            |   879|
+|34    |      buff_wdata                                          |resnet50_bottleneck_gmem1_m_axi_fifo__parameterized3             |   121|
+|35    |        U_fifo_srl                                        |resnet50_bottleneck_gmem1_m_axi_srl__parameterized3              |    69|
+|36    |      \bus_wide_gen.buff_wdata_in                         |resnet50_bottleneck_gmem1_m_axi_fifo__parameterized1             |    93|
+|37    |        U_fifo_srl                                        |resnet50_bottleneck_gmem1_m_axi_srl__parameterized1              |    38|
+|38    |      \bus_wide_gen.wreq_offset                           |resnet50_bottleneck_gmem1_m_axi_fifo__parameterized0             |   121|
+|39    |        U_fifo_srl                                        |resnet50_bottleneck_gmem1_m_axi_srl__parameterized0              |    73|
+|40    |      \conservative_gen.fifo_burst                        |resnet50_bottleneck_gmem1_m_axi_fifo                             |    74|
+|41    |        U_fifo_srl                                        |resnet50_bottleneck_gmem1_m_axi_srl                              |    50|
+|42    |      fifo_wreq                                           |resnet50_bottleneck_gmem1_m_axi_fifo__parameterized2             |   156|
+|43    |        U_fifo_srl                                        |resnet50_bottleneck_gmem1_m_axi_srl__parameterized2              |   131|
+|44    |      fifo_wrsp                                           |resnet50_bottleneck_gmem1_m_axi_fifo__parameterized4             |    51|
+|45    |        U_fifo_srl                                        |resnet50_bottleneck_gmem1_m_axi_srl__parameterized4              |    30|
+|46    |      user_resp                                           |resnet50_bottleneck_gmem1_m_axi_fifo__parameterized5             |    19|
+|47    |  grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3_fu_151 |resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3 |   244|
+|48    |    flow_control_loop_pipe_sequential_init_U              |resnet50_bottleneck_flow_control_loop_pipe_sequential_init_1     |    81|
+|49    |  grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_55_4_fu_161 |resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_55_4 |    50|
+|50    |    flow_control_loop_pipe_sequential_init_U              |resnet50_bottleneck_flow_control_loop_pipe_sequential_init_0     |    30|
+|51    |  grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_61_5_fu_167 |resnet50_bottleneck_resnet50_bottleneck_Pipeline_VITIS_LOOP_61_5 |   226|
+|52    |    flow_control_loop_pipe_sequential_init_U              |resnet50_bottleneck_flow_control_loop_pipe_sequential_init       |    93|
+|53    |  local_in_U                                              |resnet50_bottleneck_local_in_RAM_AUTO_1R1W                       |     1|
+|54    |  local_out_U                                             |resnet50_bottleneck_local_out_RAM_AUTO_1R1W                      |    31|
+|55    |  skip_connection_fifo_fifo_U                             |resnet50_bottleneck_fifo_w16_d1024_A                             |   148|
+|56    |    U_resnet50_bottleneck_fifo_w16_d1024_A_ram            |resnet50_bottleneck_fifo_w16_d1024_A_ram                         |    37|
++------+----------------------------------------------------------+-----------------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 2278.352 ; gain = 1768.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2381 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 2278.352 ; gain = 1768.223
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 2278.352 ; gain = 1768.223
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 2297.910 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 204 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2415.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 109 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 93 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 15 instances
+
+Synth Design complete | Checksum: a943d29e
+INFO: [Common 17-83] Releasing license: Synthesis
+147 Infos, 217 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 2415.531 ; gain = 1910.309
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2415.531 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_research_project/RESNET50/RESNET50_VIVADO/RESNET50_VIVADO.runs/synth_1/resnet50_bottleneck.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file resnet50_bottleneck_utilization_synth.rpt -pb resnet50_bottleneck_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 20:13:26 2026...

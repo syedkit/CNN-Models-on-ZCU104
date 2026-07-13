@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../alexnet_tbb.cpp in debug mode
+   Compiling ../../../../alexnet.cpp in debug mode
+   Generating csim.exe
+=======================================
+  Starting AlexNet Layer 1 C-Simulation
+=======================================
+Memory allocated successfully. Initializing data...
+Running Hardware Kernel (This may take a moment)...
+--- Kernel Output Samples ---
+Output[0]: 0.046875
+Output[1000]: 0.046875
+Simulation Complete! Hardware is ready for Synthesis.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

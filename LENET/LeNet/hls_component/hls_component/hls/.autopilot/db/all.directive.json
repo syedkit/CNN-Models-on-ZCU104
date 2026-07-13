@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "lenet_kernel",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "lenet_kernel"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "",
+    "sourceLine": 0,
+    "success": true
+  }
+]

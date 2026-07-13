@@ -1,0 +1,615 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: MobileNetV2.cpp, Line: 121, Column: 5 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - Callee:          'pointwise_conv(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 69, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: MobileNetV2.cpp, Line: 120, Column: 5 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - Callee:          'depthwise_conv(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 86, Column: 34 }
+Function:        _Z14pointwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPS4_PA32_KS4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_86_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 34, Column: 34 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_34_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 40, Column: 34 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 41, Column: 38 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_41_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 50, Column: 38 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_50_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 51, Column: 42 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_51_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 69, Column: 0 }
+Function:        _Z14pointwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPS4_PA32_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_86_5
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:86:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          pointwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_34_4
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:34:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          depthwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:40:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          depthwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_6
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:41:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          depthwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_6
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:41:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          depthwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_6
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:41:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          depthwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_50_7
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:50:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          depthwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_51_8
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:51:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          depthwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_51_8
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:51:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          depthwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_51_8
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:51:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          depthwise_conv
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: MobileNetV2.cpp, Line: 120, Column: 5 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - Callee:          'depthwise_conv(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: MobileNetV2.cpp, Line: 121, Column: 5 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - Callee:          'pointwise_conv(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 69, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_mobilenetv2_block_ir
+Args:            
+  - Callee:          'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_mobilenetv2_block_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       output_tensor
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: MobileNetV2.cpp, Line: 20, Column: 12 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          line_buffer
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        bram
+  - String:          ' variable '''
+  - Name:            pw_weights
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        bram
+  - String:          ' variable '''
+  - Name:            dw_weights
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: MobileNetV2.cpp, Line: 117, Column: 23 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '100352'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        input_tensorseq
+  - ArrayName:       input_tensor
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_117_1
+  - String:          ' '
+  - LoopLoc:         'MobileNetV2.cpp:117:23'
+  - String:          ' '
+  - Function:        'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 117, Column: 66 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.4
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: MobileNetV2.cpp, Line: 89, Column: 77 }
+Function:        _Z14pointwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEEPS4_PA32_KS4_
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 89, Column: 77 }
+  - OrigDirection:   write
+  - OrigID:          for.body12.store.417
+  - ArrayName:       output_tensor
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_83_4
+  - String:          ' '
+  - LoopLoc:         'MobileNetV2.cpp:83:30'
+  - String:          ' '
+  - Function:        'pointwise_conv(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 69, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: MobileNetV2.cpp, Line: 117, Column: 23 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 117, Column: 23 }
+  - OrigDirection:   read
+  - OrigID:          input_tensorseq
+  - ArrayName:       input_tensor
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_117_1
+  - String:          ' '
+  - LoopLoc:         'MobileNetV2.cpp:117:23'
+  - String:          ' '
+  - Function:        'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_117_1
+  - String:          '> at '
+  - LoopLoc:         'MobileNetV2.cpp:117:23'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: MobileNetV2.cpp, Line: 20, Column: 12 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           line_buffer
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: MobileNetV2.cpp, Line: 20, Column: 12 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=line_buffer_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  depthwise_conv
+  - String:          ' '
+  - varLoc:          'MobileNetV2.cpp:20:12'
+  - String:          ' '
+  - VarName:         line_buffer_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: MobileNetV2.cpp, Line: 20, Column: 12 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            line_buffer_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       output_tensor
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: MobileNetV2.cpp, Line: 20, Column: 12 }
+Function:        _Z14depthwise_convRN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEES6_PA3_A3_KS4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          line_buffer_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: MobileNetV2.cpp, Line: 117, Column: 23 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '100352'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_117_1
+  - String:          ' '
+  - LoopLoc:         'MobileNetV2.cpp:117:23'
+  - String:          ' '
+  - Function:        'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: MobileNetV2.cpp, Line: 117, Column: 23 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '100352'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_117_1
+  - String:          '''('
+  - LoopLoc:         'MobileNetV2.cpp:117:23'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-extract-cfg-in-dataflow
+Name:            LoopExtractionForDataflow
+DebugLoc:        { File: MobileNetV2.cpp, Line: 117, Column: 23 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - String:          'Changing loop '''
+  - LoopName:        Loop_VITIS_LOOP_117_1_proc
+  - String:          ''' ('
+  - LoopLoc:         'MobileNetV2.cpp:117:23'
+  - String:          ') to a process function for dataflow in function '''
+  - Name:            mobilenetv2_block
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: MobileNetV2.cpp, Line: 117, Column: 23 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - Callee:          Loop_VITIS_LOOP_117_1_proc
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: MobileNetV2.cpp, Line: 120, Column: 5 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - Callee:          'depthwise_conv(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: MobileNetV2.cpp, Line: 121, Column: 5 }
+Function:        _Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4_
+Args:            
+  - Callee:          'pointwise_conv(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32]) (.1)'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 69, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'mobilenetv2_block(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [3][3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [32])'
+    DebugLoc:        { File: MobileNetV2.cpp, Line: 103, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

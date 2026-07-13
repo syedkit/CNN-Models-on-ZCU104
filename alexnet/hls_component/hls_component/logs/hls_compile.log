@@ -1,0 +1,575 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/vitis_research_project/alexnet/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis_research_project/alexnet/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/vitis_research_project/alexnet/hls_component/hls_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/vitis_research_project/alexnet/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=alexnet.cpp' from D:/vitis_research_project/alexnet/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/vitis_research_project/alexnet/hls_component/alexnet.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=alexnet_tbb.cpp' from D:/vitis_research_project/alexnet/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/vitis_research_project/alexnet/hls_component/alexnet_tbb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=alexnet_layer1' from D:/vitis_research_project/alexnet/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/vitis_research_project/alexnet/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xczu7ev-ffvc1156-2-e' from D:/vitis_research_project/alexnet/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from D:/vitis_research_project/alexnet/hls_component/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/vitis_research_project/alexnet/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis_research_project/alexnet/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 4.209 seconds; current allocated memory: 158.664 MB.
+INFO: [HLS 200-10] Analyzing design file 'alexnet.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.938 seconds; current allocated memory: 161.117 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 706 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 14,737 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,579 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,213 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,213 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,965 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,239 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,239 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,239 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,623 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,622 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,622 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,622 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,622 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,736 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,719 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/alexnet/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_57_8' is marked as complete unroll implied by the pipeline pragma (alexnet.cpp:57:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_58_9' is marked as complete unroll implied by the pipeline pragma (alexnet.cpp:58:38)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_59_10' is marked as complete unroll implied by the pipeline pragma (alexnet.cpp:59:43)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_8' (alexnet.cpp:57:34) in function 'alexnet_layer1' completely with a factor of 3 (alexnet.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_58_9' (alexnet.cpp:58:38) in function 'alexnet_layer1' completely with a factor of 11 (alexnet.cpp:19:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_59_10' (alexnet.cpp:59:43) in function 'alexnet_layer1' completely with a factor of 11 (alexnet.cpp:19:0)
+INFO: [HLS 214-248] Applying array_partition to 'local_weights': Complete partitioning on dimension 2. (alexnet.cpp:29:9)
+INFO: [HLS 214-115] Multiple burst reads of length 34848 and bit width 16 in loop 'VITIS_LOOP_36_1'(alexnet.cpp:36:19) has been inferred on bundle 'gmem2'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (alexnet.cpp:36:19)
+INFO: [HLS 214-115] Multiple burst reads of length 96 and bit width 16 in loop 'VITIS_LOOP_36_1'(alexnet.cpp:36:19) has been inferred on bundle 'gmem3'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (alexnet.cpp:36:19)
+INFO: [HLS 214-115] Multiple burst reads of length 11 and bit width 16 has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (alexnet.cpp:67:44)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 26.652 seconds; current allocated memory: 168.125 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 168.125 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.332 seconds; current allocated memory: 180.500 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.311 seconds; current allocated memory: 182.086 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.041 seconds; current allocated memory: 208.785 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_39_3'(alexnet.cpp:39:30) and 'VITIS_LOOP_40_4'(alexnet.cpp:40:34) in function 'alexnet_layer1' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_38_2'(alexnet.cpp:38:26) and 'VITIS_LOOP_39_3'(alexnet.cpp:39:30) in function 'alexnet_layer1' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_36_1'(alexnet.cpp:36:19) and 'VITIS_LOOP_38_2'(alexnet.cpp:38:26) in function 'alexnet_layer1' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_50_6'(alexnet.cpp:50:26) and 'VITIS_LOOP_51_7'(alexnet.cpp:51:30) in function 'alexnet_layer1' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_49_5'(alexnet.cpp:49:22) and 'VITIS_LOOP_50_6'(alexnet.cpp:50:26) in function 'alexnet_layer1' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_39_3' (alexnet.cpp:39:30) in function 'alexnet_layer1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_38_2' (alexnet.cpp:38:26) in function 'alexnet_layer1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_36_1' (alexnet.cpp:36:19) in function 'alexnet_layer1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_50_6' (alexnet.cpp:50:26) in function 'alexnet_layer1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_49_5' (alexnet.cpp:49:22) in function 'alexnet_layer1'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.15 seconds; current allocated memory: 230.270 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'alexnet_layer1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln42_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_weights_2'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_weights'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_weights_1'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LOOP_40_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LOOP_40_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.706 seconds; current allocated memory: 235.660 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.048 seconds; current allocated memory: 236.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln74_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_362) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_361) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_360) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_359) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_358) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_357) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_356) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_355) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_354) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_353) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_352) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_351) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_350) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_349) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_348) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_347) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_346) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_345) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_344) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_343) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_342) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_341) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_340) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_339) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_338) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_337) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_336) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_335) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_334) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_333) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_332) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_331) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_330) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_329) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_328) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_327) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_326) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_325) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_324) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_323) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_322) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_321) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_320) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_319) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_318) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_317) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_316) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_315) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_314) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_313) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_312) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_311) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_310) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_309) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_308) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_307) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_306) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_305) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_304) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_303) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_302) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_301) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_300) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_299) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_298) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_297) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_296) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_295) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_294) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_293) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_292) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_291) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_290) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_289) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_288) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_287) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_286) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_285) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_284) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_283) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_282) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_281) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_280) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_279) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_278) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_277) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_276) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_275) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_274) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_273) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_272) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_271) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_270) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_269) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_268) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_267) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_266) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_265) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_264) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_263) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_262) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_261) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_260) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_259) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_258) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_257) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_256) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_255) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_254) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_253) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_252) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_251) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_250) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_249) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_248) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_247) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_246) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_245) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_244) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_243) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_242) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_241) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_240) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_239) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_238) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_237) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_236) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_235) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_234) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_233) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_232) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_231) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_230) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_229) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_228) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_227) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_226) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_225) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_224) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_223) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_222) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_221) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_220) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_219) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_218) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_217) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_216) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_215) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_214) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_213) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_212) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_211) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_210) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_209) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_208) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_207) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_206) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_205) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_204) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_203) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_202) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_201) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_200) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_199) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_198) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_197) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_196) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_195) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_194) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_193) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_192) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_191) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_190) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_189) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_188) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_187) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_186) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_185) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_184) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_183) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_182) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_181) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_180) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_179) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_178) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_177) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_176) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_175) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_174) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_172) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_171) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_170) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_168) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_167) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_166) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_165) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_164) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_163) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_162) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_160) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_159) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_158) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_157) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_156) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_155) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_154) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_153) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_152) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_151) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_150) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_149) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_148) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_146) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_145) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_144) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_143) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_142) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_141) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_140) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_138) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_137) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_136) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_135) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_134) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_133) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_132) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_131) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_130) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_129) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_128) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_126) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_125) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_124) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_122) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_121) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_120) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_119) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_118) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_117) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_116) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_114) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_113) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_112) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_111) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_110) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_109) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_108) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_107) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_106) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_105) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_104) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_103) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_102) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_101) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_100) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_98) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_96) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_94) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_92) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_91) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_90) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_88) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_87) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_86) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_85) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_82) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_81) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_80) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_78) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_77) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_76) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_75) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_74) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_73) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_72) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_70) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_69) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_68) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_67) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_66) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_65) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln68) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_weights_2'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_weights_1'. Use bind_storage pragma to override this type.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_weights'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'.
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read operation ('pixel', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus read operation ('pixel', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus read operation ('pixel', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus read operation ('pixel', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus read operation ('pixel', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus read operation ('pixel', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus read operation ('pixel', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus read operation ('pixel', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus request operation ('empty_102', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus request operation ('empty_90', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 193, distance = 1, offset = 1) between bus request operation ('empty_108', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus request operation ('empty_90', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1) between bus request operation ('empty_111', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus request operation ('empty_90', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 241, distance = 1, offset = 1) between bus request operation ('empty_112', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus request operation ('empty_90', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 249, distance = 1, offset = 1) between bus request operation ('empty_113', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus request operation ('empty_90', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 253, distance = 1, offset = 1) between bus request operation ('empty_113', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus request operation ('empty_90', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 255, distance = 1, offset = 1) between bus request operation ('empty_114', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus request operation ('empty_90', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' (loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'): Unable to enforce a carried dependence constraint (II = 256, distance = 1, offset = 1) between bus request operation ('empty_114', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67) and bus request operation ('empty_90', alexnet.cpp:67) on port 'gmem0' (alexnet.cpp:67).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive for loop 'VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7': unable to pipeline.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 18 seconds. CPU system time: 0 seconds. Elapsed time: 39.155 seconds; current allocated memory: 280.328 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 3.982 seconds; current allocated memory: 280.328 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'alexnet_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 1.755 seconds; current allocated memory: 280.328 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 280.328 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO' pipeline 'VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LOOP_40_4' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem3_0_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO/m_axi_gmem2_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_11ns_4ns_4ns_4ns_14_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_5ns_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.771 seconds; current allocated memory: 280.328 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24ns_24_4_1': 363 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_6ns_19ns_19_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_11ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_13ns_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_8ns_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.159 seconds; current allocated memory: 320.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'alexnet_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'alexnet_layer1/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'alexnet_layer1/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'alexnet_layer1/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'alexnet_layer1/gmem3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'alexnet_layer1/input_img' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'alexnet_layer1/output_feat' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'alexnet_layer1/weights' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'alexnet_layer1/bias' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'alexnet_layer1' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_img', 'output_feat', 'weights', 'bias' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'alexnet_layer1'.
+INFO: [RTMG 210-278] Implementing memory 'alexnet_layer1_local_weights_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'alexnet_layer1_local_bias_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 5.379 seconds; current allocated memory: 398.340 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.884 seconds; current allocated memory: 398.340 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.54 seconds; current allocated memory: 399.613 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for alexnet_layer1.
+INFO: [VLOG 209-307] Generating Verilog RTL for alexnet_layer1.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-112] Total CPU user time: 43 seconds. Total CPU system time: 5 seconds. Total elapsed time: 103.188 seconds; peak allocated memory: 399.664 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 49s

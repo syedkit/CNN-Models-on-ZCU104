@@ -1,0 +1,47 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'alexnet_layer1'" level="0">
+<item name = "Date">Mon Mar 30 19:48:39 2026
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">hls_component</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">110967665, 110967665, 1.110 sec, 1.110 sec, 110967666, 110967666, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO_fu_134">alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO, 34852, 34852, 0.349 ms, 0.349 ms, 34849, 34849, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7_fu_148">alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7, 110932801, 110932801, 1.109 sec, 1.109 sec, 110932801, 110932801, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

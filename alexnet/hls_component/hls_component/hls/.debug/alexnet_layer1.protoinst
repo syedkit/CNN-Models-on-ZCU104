@@ -1,0 +1,39 @@
+{
+	"version": "1.0",
+	"modules": {
+		"alexnet_layer1": {
+			"proto_instances": {
+				"/AESL_inst_alexnet_layer1_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst_n"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO_fu_134/grp_alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO_fu_134_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7_fu_148/grp_alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7_fu_148_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

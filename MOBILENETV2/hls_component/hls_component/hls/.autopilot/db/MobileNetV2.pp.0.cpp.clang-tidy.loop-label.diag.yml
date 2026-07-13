@@ -1,0 +1,166 @@
+---
+MainSourceFile:  'D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/.autopilot/db/MobileNetV2.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          279847
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          280313
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          280780
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          574874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          955021
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_2:  '
+    FileOffset:      28
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          955063
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_29_3:  '
+    FileOffset:      29
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          955106
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_29_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_34_4:  '
+    FileOffset:      34
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          955219
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_34_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_5:  '
+    FileOffset:      40
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          955400
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_41_6:  '
+    FileOffset:      41
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          955450
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_41_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_50_7:  '
+    FileOffset:      50
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          955734
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_50_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_51_8:  '
+    FileOffset:      51
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          955791
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_51_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_72_1:  '
+    FileOffset:      72
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          956199
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_72_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_2:  '
+    FileOffset:      73
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          956242
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_3:  '
+    FileOffset:      77
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          956330
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_4:  '
+    FileOffset:      83
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          956458
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_5:  '
+    FileOffset:      86
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          956551
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
+    FilePath:        MobileNetV2.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp'
+        Offset:          957465
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_1: '
+...

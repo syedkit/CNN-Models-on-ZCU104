@@ -1,0 +1,420 @@
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:2:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\hls_stream.h:12:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot/hls_stream_39.h:98:9: error: use of undeclared identifier '__fpga_fifo_pop'
+        __fpga_fifo_pop(&V, &dout);
+        ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot/hls_stream_39.h:109:9: note: in instantiation of member function 'hls::stream<ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 0>::read' requested here
+        read(tmp);
+        ^
+D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:33:46: note: in instantiation of member function 'hls::stream<ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 0>::read' requested here
+                data_t new_pixel = in_stream.read();
+                                             ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:814:20: error: expected ';' after expression
+    bool signbit = _AP_ROOT_op_get_bit(op.V, _AP_W2 - 1);
+                   ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:17: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:814:20: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:17: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+                ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:139:23: note: in instantiation of member function 'ap_fixed_base<16, 8, true, AP_TRN, AP_WRAP, 0>::ap_fixed_base' requested here
+  HLS_CONSTEXPR_EXTRA CTOR(int)
+                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:131:43: note: expanded from macro 'CTOR'
+  AP_INLINE AP_NODEBUG ap_fixed(TYPE v) : Base(v) {}
+                                          ^
+D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:49:34: note: in instantiation of member function 'ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>::ap_fixed' requested here
+                    data_t sum = 0;
+                                 ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:814:20: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+    bool signbit = _AP_ROOT_op_get_bit(op.V, _AP_W2 - 1);
+                   ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:563:53: note: expanded from macro '_ssdm_op_get_bit'
+    bool __Result__ = __builtin_bit_select((void*)(&__Val2__), Bit); \
+                                                    ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:828:63: error: expected ';' after expression
+        bool qb = (F2 - _AP_F > _AP_W2) ? _AP_S2 && signbit : _AP_ROOT_op_get_bit(op.V, F2 - _AP_F - 1);
+                                                              ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:17: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:828:63: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:17: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:828:63: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:563:53: note: expanded from macro '_ssdm_op_get_bit'
+    bool __Result__ = __builtin_bit_select((void*)(&__Val2__), Bit); \
+                                                    ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:831:38: error: template argument for template type parameter must be a type
+        bool r = (F2 > _AP_F + 1) ? (_AP_ROOT_op_get_range(op.V, 0, hi) != 0) : false;
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:37: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                    ^~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:223:20: note: template parameter is declared here
+template <typename _Tp>
+                   ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:831:38: error: expected a qualified name after 'typename'
+        bool r = (F2 > _AP_F + 1) ? (_AP_ROOT_op_get_range(op.V, 0, hi) != 0) : false;
+                                     ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:51: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                                  ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:831:38: warning: use of undeclared identifier 'type'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:51: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                                  ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:831:38: error: expected ';' after expression
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:579:17: note: expanded from macro '_ssdm_op_get_range'
+    typeof(Val) __Val2__ = Val;                                             \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:831:38: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:579:17: note: expanded from macro '_ssdm_op_get_range'
+    typeof(Val) __Val2__ = Val;                                             \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:831:38: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:580:62: note: expanded from macro '_ssdm_op_get_range'
+    __builtin_bit_part_select((void*)(&__Result__), (void*)(&__Val2__), Lo, \
+                                                             ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:859:25: error: expected ';' after expression
+      bool newsignbit = _AP_ROOT_op_get_bit(Base::V, _AP_W - 1);
+                        ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:17: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:859:25: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:17: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:859:25: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:563:53: note: expanded from macro '_ssdm_op_get_bit'
+    bool __Result__ = __builtin_bit_select((void*)(&__Val2__), Bit); \
+                                                    ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:861:48: error: expected ';' after expression
+      bool lD = (pos1 < _AP_W2 && pos1 >= 0) ? _AP_ROOT_op_get_bit(op.V, pos1)
+                                               ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:17: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:861:48: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:17: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:861:48: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:563:53: note: expanded from macro '_ssdm_op_get_bit'
+    bool __Result__ = __builtin_bit_select((void*)(&__Val2__), Bit); \
+                                                    ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:871:22: error: template argument for template type parameter must be a type
+          Range2.V = _AP_ROOT_op_get_range(op.V, pos2, _AP_W2 - 1);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:37: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                    ^~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:223:20: note: template parameter is declared here
+template <typename _Tp>
+                   ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:871:22: error: expected a qualified name after 'typename'
+          Range2.V = _AP_ROOT_op_get_range(op.V, pos2, _AP_W2 - 1);
+                     ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:51: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                                  ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:871:22: warning: use of undeclared identifier 'type'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:51: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                                  ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:871:22: error: expected ';' after expression
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:579:17: note: expanded from macro '_ssdm_op_get_range'
+    typeof(Val) __Val2__ = Val;                                             \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:871:22: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:579:17: note: expanded from macro '_ssdm_op_get_range'
+    typeof(Val) __Val2__ = Val;                                             \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:871:22: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:580:62: note: expanded from macro '_ssdm_op_get_range'
+    __builtin_bit_part_select((void*)(&__Result__), (void*)(&__Val2__), Lo, \
+                                                             ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:879:22: error: template argument for template type parameter must be a type
+          Range1.V = _AP_ROOT_op_get_range(op.V, pos1, _AP_W2 - 1);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:37: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                    ^~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:223:20: note: template parameter is declared here
+template <typename _Tp>
+                   ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:879:22: error: expected a qualified name after 'typename'
+          Range1.V = _AP_ROOT_op_get_range(op.V, pos1, _AP_W2 - 1);
+                     ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:51: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                                  ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:879:22: warning: use of undeclared identifier 'type'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:51: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                                  ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:879:22: error: expected ';' after expression
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:579:17: note: expanded from macro '_ssdm_op_get_range'
+    typeof(Val) __Val2__ = Val;                                             \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:879:22: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:579:17: note: expanded from macro '_ssdm_op_get_range'
+    typeof(Val) __Val2__ = Val;                                             \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:879:22: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:580:62: note: expanded from macro '_ssdm_op_get_range'
+    __builtin_bit_part_select((void*)(&__Result__), (void*)(&__Val2__), Lo, \
+                                                             ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:903:26: error: template argument for template type parameter must be a type
+            (_AP_W > 1 ? _AP_ROOT_op_get_range(Base::V, 0, _AP_W - 2) == 0
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:37: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                    ^~~~~~~~~~~
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:223:20: note: template parameter is declared here
+template <typename _Tp>
+                   ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:903:26: error: expected a qualified name after 'typename'
+            (_AP_W > 1 ? _AP_ROOT_op_get_range(Base::V, 0, _AP_W - 2) == 0
+                         ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:51: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                                  ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:903:26: warning: use of undeclared identifier 'type'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:578:51: note: expanded from macro '_ssdm_op_get_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0;      \
+                                                  ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:903:26: error: expected ';' after expression
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:579:17: note: expanded from macro '_ssdm_op_get_range'
+    typeof(Val) __Val2__ = Val;                                             \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:903:26: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:579:17: note: expanded from macro '_ssdm_op_get_range'
+    typeof(Val) __Val2__ = Val;                                             \
+                ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:903:26: warning: use of undeclared identifier '__Val2__'; unqualified lookup into dependent bases of class template 'ap_fixed_base' is a Microsoft extension [-Wmicrosoft-template]
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:648:44: note: expanded from macro '_AP_ROOT_op_get_range'
+#define _AP_ROOT_op_get_range(Val, Lo, Hi) _ssdm_op_get_range(Val, Lo, Hi)
+                                           ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:580:62: note: expanded from macro '_ssdm_op_get_range'
+    __builtin_bit_part_select((void*)(&__Result__), (void*)(&__Val2__), Lo, \
+                                                             ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:814:20: error: use of undeclared identifier 'typeof'
+    bool signbit = _AP_ROOT_op_get_bit(op.V, _AP_W2 - 1);
+                   ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:5: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+    ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:534:3: note: in instantiation of function template specialization 'ap_fixed_base<16, 8, true, AP_TRN, AP_WRAP, 0>::operator=<32, 32, true, AP_TRN, AP_WRAP, 0>' requested here
+  CTOR_FROM_INT(int, _AP_SIZE_int, true)
+  ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:516:11: note: expanded from macro 'CTOR_FROM_INT'
+    *this = tmp;                                                           \
+          ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:139:23: note: in instantiation of member function 'ap_fixed_base<16, 8, true, AP_TRN, AP_WRAP, 0>::ap_fixed_base' requested here
+  HLS_CONSTEXPR_EXTRA CTOR(int)
+                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:131:43: note: expanded from macro 'CTOR'
+  AP_INLINE AP_NODEBUG ap_fixed(TYPE v) : Base(v) {}
+                                          ^
+D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:49:34: note: in instantiation of member function 'ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>::ap_fixed' requested here
+                    data_t sum = 0;
+                                 ^
+In file included from D:\vitis_research_project\MobileNetV2\hls_component\MobileNetV2.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_fixed.h:10:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_fixed_base.h:814:20: error: no member named '__Val2__' in 'ap_fixed_base<16, 8, true, AP_TRN, AP_WRAP, 0>'
+    bool signbit = _AP_ROOT_op_get_bit(op.V, _AP_W2 - 1);
+                   ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:646:39: note: expanded from macro '_AP_ROOT_op_get_bit'
+#define _AP_ROOT_op_get_bit(Val, Bit) _ssdm_op_get_bit(Val, Bit)
+                                      ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:562:17: note: expanded from macro '_ssdm_op_get_bit'
+    typeof(Val) __Val2__ = Val;                                      \
+                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]

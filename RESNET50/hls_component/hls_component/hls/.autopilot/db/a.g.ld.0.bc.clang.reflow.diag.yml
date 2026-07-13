@@ -1,0 +1,69 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_resnet50_bottleneck_ir
+Args:            
+  - Callee:          'resnet50_bottleneck(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: ResNet50.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_resnet50_bottleneck_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: ResNet50.cpp, Line: 43, Column: 30 }
+Function:        _Z19resnet50_bottleneckP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_S5_S5_
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ResNet50.cpp, Line: 43, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.7
+  - ArrayName:       input_tensor
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_3
+  - String:          ' '
+  - LoopLoc:         'ResNet50.cpp:40:30'
+  - String:          ' '
+  - Function:        'resnet50_bottleneck(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: ResNet50.cpp, Line: 18, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: ResNet50.cpp, Line: 69, Column: 62 }
+Function:        _Z19resnet50_bottleneckP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_S5_S5_
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: ResNet50.cpp, Line: 69, Column: 62 }
+  - OrigDirection:   write
+  - OrigID:          for.body32.store.16
+  - ArrayName:       output_tensor
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_61_5
+  - String:          ' '
+  - LoopLoc:         'ResNet50.cpp:61:30'
+  - String:          ' '
+  - Function:        'resnet50_bottleneck(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: ResNet50.cpp, Line: 18, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_55_4
+  - String:          '> at '
+  - LoopLoc:         'ResNet50.cpp:55:30'
+  - String:          ' '
+...

@@ -1,0 +1,45 @@
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:2265:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:2265:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:2279:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:2279:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:2293:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:2293:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:4249:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:4249:7: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6368:5: warning: Added loop label VITIS_LOOP_36_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < 56; r++) {
+    ^~~
+    VITIS_LOOP_36_1: 
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6368:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6369:9: warning: Added loop label VITIS_LOOP_37_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < 56; c++) {
+        ^~~
+        VITIS_LOOP_37_2: 
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6369:9: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6372:13: warning: Added loop label VITIS_LOOP_40_3:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < 256; ch++) {
+            ^~~
+            VITIS_LOOP_40_3: 
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6372:13: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6379:13: warning: Added loop label VITIS_LOOP_55_4:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < 256; ch++) {
+            ^~~
+            VITIS_LOOP_55_4: 
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6379:13: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6385:13: warning: Added loop label VITIS_LOOP_61_5:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < 256; ch++) {
+            ^~~
+            VITIS_LOOP_61_5: 
+D:\vitis_research_project\ResNet50\hls_component\hls_component\hls\.autopilot\db\ResNet50.pp.0.cpp:6385:13: note: FIX-IT applied suggested code changes

@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/30/26 19:31:41",
+ "timestampMillis": "1774879301385",
+ "buildStep": {
+  "cmdId": "a6aaed72-8732-4374-9ccd-f6c7e3ab0d59",
+  "name": "v++",
+  "logFile": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config D:\\vitis_research_project\\lenet\\LeNet\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "D:\\vitis_research_project\\lenet\\LeNet\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [
+   {
+    "path": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_config.cfg",
+    "content": "part=xczu7ev-ffvc1156-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nclock=10ns\ntb.file=lenet_tb.cpp\nsyn.file=lenet_c_code.cpp\nsyn.file=lenet.h\nsyn.top=lenet_kernel"
+   }
+  ],
+  "cwd": "D:\\vitis_research_project\\lenet\\LeNet\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:31:41",
+ "timestampMillis": "1774879301385",
+ "status": {
+  "cmdId": "a6aaed72-8732-4374-9ccd-f6c7e3ab0d59",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/30/26 19:31:48",
+ "timestampMillis": "1774879308774",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "lenet_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\lenet_c_code.cpp",
+     "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\lenet.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/30/26 19:31:48",
+ "timestampMillis": "1774879308775",
+ "buildStep": {
+  "cmdId": "5467f6e6-9867-459b-b2f5-6db53f6975a4",
+  "name": "",
+  "logFile": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\vitis_research_project\\lenet\\LeNet\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:31:48",
+ "timestampMillis": "1774879308776",
+ "status": {
+  "cmdId": "5467f6e6-9867-459b-b2f5-6db53f6975a4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:31:48",
+ "timestampMillis": "1774879308776",
+ "report": {
+  "path": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:31:48",
+ "timestampMillis": "1774879308776",
+ "report": {
+  "path": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:31:48",
+ "timestampMillis": "1774879308777",
+ "report": {
+  "path": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:32:20",
+ "timestampMillis": "1774879340571",
+ "report": {
+  "path": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:32:20",
+ "timestampMillis": "1774879340572",
+ "report": {
+  "path": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:32:20",
+ "timestampMillis": "1774879340572",
+ "report": {
+  "path": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:32:20",
+ "timestampMillis": "1774879340573",
+ "status": {
+  "cmdId": "5467f6e6-9867-459b-b2f5-6db53f6975a4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:32:20",
+ "timestampMillis": "1774879340763",
+ "status": {
+  "cmdId": "a6aaed72-8732-4374-9ccd-f6c7e3ab0d59",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:32:20",
+ "timestampMillis": "1774879340822",
+ "report": {
+  "path": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\reports\\v++_compile_hls_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:32:20",
+ "timestampMillis": "1774879340824",
+ "report": {
+  "path": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\reports\\.db\\v++_compile_hls_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

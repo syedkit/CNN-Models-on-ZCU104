@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1774891801">
+  <File Type="ROUTE-BUS-SKEW" Name="alexnet_layer1_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="alexnet_layer1.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="alexnet_layer1_routed_bb.dcp"/>
+  <File Type="OPT-UTIL" Name="alexnet_layer1_utilization_opted.rpt"/>
+  <File Type="ROUTE-PWR" Name="alexnet_layer1_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="alexnet_layer1.tcl"/>
+  <File Type="INIT-TIMING" Name="alexnet_layer1_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="alexnet_layer1_power_summary_routed.pb"/>
+  <File Type="OPT-RQA-PB" Name="alexnet_layer1_rqa_opted.pb"/>
+  <File Type="REPORTS-TCL" Name="alexnet_layer1_reports.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="alexnet_layer1_timing_summary_routed.pb"/>
+  <File Type="OPT-UTIL-PB" Name="alexnet_layer1_utilization_opted.pb"/>
+  <File Type="OPT-DCP" Name="alexnet_layer1_opt.dcp"/>
+  <File Type="OPT-DRC" Name="alexnet_layer1_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="alexnet_layer1_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="alexnet_layer1.hwdef"/>
+  <File Type="OPT-TIMING" Name="alexnet_layer1_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="alexnet_layer1_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="alexnet_layer1_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="alexnet_layer1_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="alexnet_layer1_placed.dcp"/>
+  <File Type="PLACE-IO" Name="alexnet_layer1_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="alexnet_layer1_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="alexnet_layer1_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="alexnet_layer1_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="alexnet_layer1_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="alexnet_layer1_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="alexnet_layer1_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="alexnet_layer1_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="alexnet_layer1_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="alexnet_layer1_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="alexnet_layer1_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="alexnet_layer1_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="alexnet_layer1_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="alexnet_layer1_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="alexnet_layer1_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-UTIL" Name="alexnet_layer1_utilization_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="alexnet_layer1_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="alexnet_layer1_routed.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="alexnet_layer1_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="alexnet_layer1_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="alexnet_layer1_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="alexnet_layer1_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="alexnet_layer1_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="alexnet_layer1_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="alexnet_layer1_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="alexnet_layer1_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="alexnet_layer1_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="alexnet_layer1_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="alexnet_layer1_route_status.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="alexnet_layer1_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="alexnet_layer1_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="alexnet_layer1_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="alexnet_layer1_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="alexnet_layer1_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="alexnet_layer1_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="alexnet_layer1_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="alexnet_layer1_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="alexnet_layer1_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="alexnet_layer1_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="alexnet_layer1_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="alexnet_layer1.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="alexnet_layer1_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="alexnet_layer1_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="alexnet_layer1.bin"/>
+  <File Type="BITSTR-MSK" Name="alexnet_layer1.msk"/>
+  <File Type="BITSTR-RBT" Name="alexnet_layer1.rbt"/>
+  <File Type="BITSTR-NKY" Name="alexnet_layer1.nky"/>
+  <File Type="BITSTR-BMM" Name="alexnet_layer1_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="alexnet_layer1.mmi"/>
+  <File Type="PDI-FILE" Name="alexnet_layer1.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="alexnet_layer1_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="alexnet_layer1_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="alexnet_layer1.rcfi"/>
+  <File Type="CFI_FILE" Name="alexnet_layer1.cfi"/>
+  <File Type="RNPI_FILE" Name="alexnet_layer1.rnpi"/>
+  <File Type="RCDO-FILE" Name="alexnet_layer1.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="alexnet_layer1_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="alexnet_layer1_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="alexnet_layer1_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="alexnet_layer1_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="alexnet_layer1_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="alexnet_layer1_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="alexnet_layer1_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="alexnet_layer1_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="alexnet_layer1_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="alexnet_layer1_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="alexnet_layer1_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="alexnet_layer1_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="alexnet_layer1_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="alexnet_layer1_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="alexnet_layer1_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="alexnet_layer1.npi"/>
+  <File Type="RBD_FILE" Name="alexnet_layer1.rbd"/>
+  <File Type="MMI-FILE" Name="alexnet_layer1.mmi"/>
+  <File Type="BIF-FILE" Name="alexnet_layer1.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="alexnet_layer1_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="alexnet_layer1_pld.bif"/>
+  <File Type="LTX-FILE" Name="alexnet_layer1.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="alexnet_layer1_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="alexnet_layer1_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="alexnet_layer1.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="alexnet_layer1.sysdef"/>
+  <File Type="BG-BGN" Name="alexnet_layer1.bgn"/>
+  <File Type="BG-DRC" Name="alexnet_layer1.drc"/>
+  <File Type="RDI-RDI" Name="alexnet_layer1.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="alexnet_layer1_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="alexnet_layer1_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../alexnet_layer1_alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_ama_addmuladd_11ns_4ns_4ns_4ns_14_4_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_control_s_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_flow_control_loop_pipe_sequential_init.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_gmem0_m_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_gmem1_m_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_gmem2_m_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_gmem3_m_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_local_bias_RAM_AUTO_1R1W.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_local_weights_RAM_1WNR_AUTO_1R1W.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_mac_muladd_16s_16s_24ns_24_4_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_mac_muladd_6ns_6ns_19ns_19_4_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_mul_6ns_11ns_16_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_mul_7ns_13ns_19_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_mul_7ns_5ns_11_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1_mul_7ns_8ns_14_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alexnet_layer1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="alexnet_layer1"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

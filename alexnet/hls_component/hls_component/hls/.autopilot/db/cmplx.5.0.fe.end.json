@@ -1,0 +1,56 @@
+{
+    "1": {
+        "name": "alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7",
+        "file": "alexnet.cpp",
+        "fileloc": "49",
+        "instructions": "3946",
+        "total_instructions": "3946",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "773",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "369"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO",
+        "file": "alexnet.cpp",
+        "fileloc": "36",
+        "instructions": "112",
+        "total_instructions": "112",
+        "calls": "",
+        "basicblocks": "14",
+        "memory_accesses": "20",
+        "control_depth": "4",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "alexnet_layer1",
+        "file": "alexnet.cpp",
+        "fileloc": "14",
+        "instructions": "37",
+        "total_instructions": "4095",
+        "calls": "2 1",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2"
+    }
+}

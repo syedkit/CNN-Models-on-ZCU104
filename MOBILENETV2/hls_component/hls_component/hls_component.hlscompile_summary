@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\hls_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/30/26 21:24:24",
+ "timestampMillis": "1774886064632",
+ "buildStep": {
+  "cmdId": "0d38d941-6246-423c-9f9b-5eab524a985f",
+  "name": "v++",
+  "logFile": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config D:\\vitis_research_project\\MobileNetV2\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "D:\\vitis_research_project\\MobileNetV2\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [
+   {
+    "path": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_config.cfg",
+    "content": "part=xczu7ev-ffvc1156-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=MobileNetV2.cpp\ntb.file=MobileNetV2_tb.cpp\nclock=10ns\nsyn.top=mobilenetv2_block"
+   }
+  ],
+  "cwd": "D:\\vitis_research_project\\MobileNetV2\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 21:24:24",
+ "timestampMillis": "1774886064633",
+ "status": {
+  "cmdId": "0d38d941-6246-423c-9f9b-5eab524a985f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/30/26 21:24:31",
+ "timestampMillis": "1774886071349",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mobilenetv2_block",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/vitis_research_project\\MobileNetV2\\hls_component\\MobileNetV2.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/30/26 21:24:31",
+ "timestampMillis": "1774886071351",
+ "buildStep": {
+  "cmdId": "0400f462-431d-4d80-b858-5839406fa0e3",
+  "name": "",
+  "logFile": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\vitis_research_project\\MobileNetV2\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 21:24:31",
+ "timestampMillis": "1774886071351",
+ "status": {
+  "cmdId": "0400f462-431d-4d80-b858-5839406fa0e3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 21:24:31",
+ "timestampMillis": "1774886071351",
+ "report": {
+  "path": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 21:24:31",
+ "timestampMillis": "1774886071352",
+ "report": {
+  "path": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 21:24:31",
+ "timestampMillis": "1774886071352",
+ "report": {
+  "path": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 21:24:57",
+ "timestampMillis": "1774886097176",
+ "report": {
+  "path": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 21:24:57",
+ "timestampMillis": "1774886097176",
+ "report": {
+  "path": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 21:24:57",
+ "timestampMillis": "1774886097176",
+ "report": {
+  "path": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 21:24:57",
+ "timestampMillis": "1774886097176",
+ "status": {
+  "cmdId": "0400f462-431d-4d80-b858-5839406fa0e3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 21:24:57",
+ "timestampMillis": "1774886097270",
+ "status": {
+  "cmdId": "0d38d941-6246-423c-9f9b-5eab524a985f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 21:24:57",
+ "timestampMillis": "1774886097288",
+ "report": {
+  "path": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\reports\\v++_compile_hls_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 21:24:57",
+ "timestampMillis": "1774886097288",
+ "report": {
+  "path": "D:/vitis_research_project\\MobileNetV2\\hls_component\\hls_component\\reports\\.db\\v++_compile_hls_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,51 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="alexnet_layer1" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=alexnet_layer1" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="alexnet.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="alexnet_layer1" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input_img offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="alexnet.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="alexnet_layer1" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output_feat offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="alexnet.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="alexnet_layer1" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=weights offset=slave bundle=gmem2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="alexnet.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="alexnet_layer1" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=bias offset=slave bundle=gmem3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="alexnet.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="alexnet_layer1" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="alexnet.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="alexnet_layer1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_weights complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="alexnet.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="alexnet_layer1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="alexnet.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="alexnet_layer1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="alexnet.cpp:57:34" msg_body="Loop 'VITIS_LOOP_57_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_57_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="alexnet.cpp:58:38" msg_body="Loop 'VITIS_LOOP_58_9' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_58_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="alexnet.cpp:59:43" msg_body="Loop 'VITIS_LOOP_59_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_59_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="alexnet.cpp:19:0" msg_body="Unrolling loop 'VITIS_LOOP_57_8' (alexnet.cpp:57:34) in function 'alexnet_layer1' completely with a factor of 3">
+        <args Factor="3" LoopLoc="alexnet.cpp:57:34" LoopName="VITIS_LOOP_57_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="alexnet.cpp:19:0" msg_body="Unrolling loop 'VITIS_LOOP_58_9' (alexnet.cpp:58:38) in function 'alexnet_layer1' completely with a factor of 11">
+        <args Factor="11" LoopLoc="alexnet.cpp:58:38" LoopName="VITIS_LOOP_58_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="alexnet.cpp:19:0" msg_body="Unrolling loop 'VITIS_LOOP_59_10' (alexnet.cpp:59:43) in function 'alexnet_layer1' completely with a factor of 11">
+        <args Factor="11" LoopLoc="alexnet.cpp:59:43" LoopName="VITIS_LOOP_59_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="alexnet.cpp:29:9" msg_body="Applying array_partition to 'local_weights': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="local_weights"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "D:/vitis_research_project\\alexnet\\hls_component\\hls_component\\hls_component.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/30/26 19:43:27",
+ "timestampMillis": "1774880007235",
+ "buildStep": {
+  "cmdId": "4adb17a2-a999-4fb1-b31a-01e254f24aec",
+  "name": "vitis-run",
+  "logFile": "D:/vitis_research_project\\alexnet\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config D:\\vitis_research_project\\alexnet\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "D:\\vitis_research_project\\alexnet\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\vitis_research_project\\alexnet\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:43:27",
+ "timestampMillis": "1774880007235",
+ "status": {
+  "cmdId": "4adb17a2-a999-4fb1-b31a-01e254f24aec",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/30/26 19:43:34",
+ "timestampMillis": "1774880014660",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/vitis_research_project\\alexnet\\hls_component\\alexnet.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/30/26 19:43:34",
+ "timestampMillis": "1774880014662",
+ "buildStep": {
+  "cmdId": "4497bc37-9173-4485-addd-842fd2e7855d",
+  "name": "",
+  "logFile": "D:/vitis_research_project\\alexnet\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\vitis_research_project\\alexnet\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:43:34",
+ "timestampMillis": "1774880014663",
+ "status": {
+  "cmdId": "4497bc37-9173-4485-addd-842fd2e7855d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:44:40",
+ "timestampMillis": "1774880080489",
+ "status": {
+  "cmdId": "4497bc37-9173-4485-addd-842fd2e7855d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:44:40",
+ "timestampMillis": "1774880080632",
+ "status": {
+  "cmdId": "4adb17a2-a999-4fb1-b31a-01e254f24aec",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:44:40",
+ "timestampMillis": "1774880080633",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:44:40",
+ "timestampMillis": "1774880080634",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

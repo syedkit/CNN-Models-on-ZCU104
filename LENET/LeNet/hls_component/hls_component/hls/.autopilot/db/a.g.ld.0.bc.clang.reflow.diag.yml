@@ -1,0 +1,243 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_lenet_kernel_ir
+Args:            
+  - Callee:          'lenet_kernel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 15, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_lenet_kernel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: lenet_c_code.cpp, Line: 20, Column: 9 }
+Function:        _Z12lenet_kernelP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_in
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: lenet_c_code.cpp, Line: 25, Column: 19 }
+Function:        _Z12lenet_kernelP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        input_dataseq
+  - ArrayName:       input_data
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_1
+  - String:          ' '
+  - LoopLoc:         'lenet_c_code.cpp:25:19'
+  - String:          ' '
+  - Function:        'lenet_kernel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 27, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.13
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: lenet_c_code.cpp, Line: 31, Column: 22 }
+Function:        _Z12lenet_kernelP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '10'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        output_dataseq
+  - ArrayName:       output_data
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_31_2
+  - String:          ' '
+  - LoopLoc:         'lenet_c_code.cpp:31:22'
+  - String:          ' '
+  - Function:        'lenet_kernel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 33, Column: 17 }
+  - OrigDirection:   write
+  - OrigID:          for.inc17.store.6
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: lenet_c_code.cpp, Line: 31, Column: 22 }
+Function:        _Z12lenet_kernelP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 31, Column: 22 }
+  - OrigDirection:   write
+  - OrigID:          output_dataseq
+  - ArrayName:       output_data
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_31_2
+  - String:          ' '
+  - LoopLoc:         'lenet_c_code.cpp:31:22'
+  - String:          ' '
+  - Function:        'lenet_kernel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: lenet_c_code.cpp, Line: 25, Column: 19 }
+Function:        _Z12lenet_kernelP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 25, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          input_dataseq
+  - ArrayName:       input_data
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_1
+  - String:          ' '
+  - LoopLoc:         'lenet_c_code.cpp:25:19'
+  - String:          ' '
+  - Function:        'lenet_kernel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: lenet_c_code.cpp, Line: 25, Column: 19 }
+Function:        _Z12lenet_kernelP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_1
+  - String:          ' '
+  - LoopLoc:         'lenet_c_code.cpp:25:19'
+  - String:          ' '
+  - Function:        'lenet_kernel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: lenet_c_code.cpp, Line: 25, Column: 19 }
+Function:        _Z12lenet_kernelP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '1024'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_25_1
+  - String:          '''('
+  - LoopLoc:         'lenet_c_code.cpp:25:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: lenet_c_code.cpp, Line: 31, Column: 22 }
+Function:        _Z12lenet_kernelP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '10'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_31_2
+  - String:          ' '
+  - LoopLoc:         'lenet_c_code.cpp:31:22'
+  - String:          ' '
+  - Function:        'lenet_kernel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)'
+    DebugLoc:        { File: lenet_c_code.cpp, Line: 15, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: lenet_c_code.cpp, Line: 31, Column: 22 }
+Function:        _Z12lenet_kernelP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PKS2_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '10'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_31_2
+  - String:          '''('
+  - LoopLoc:         'lenet_c_code.cpp:31:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

@@ -1,0 +1,290 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/vitis_research_project/MobileNetV2/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis_research_project/MobileNetV2/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/vitis_research_project/MobileNetV2/hls_component/hls_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/vitis_research_project/MobileNetV2/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=MobileNetV2.cpp' from D:/vitis_research_project/MobileNetV2/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/vitis_research_project/MobileNetV2/hls_component/MobileNetV2.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=MobileNetV2_tb.cpp' from D:/vitis_research_project/MobileNetV2/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/vitis_research_project/MobileNetV2/hls_component/MobileNetV2_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=mobilenetv2_block' from D:/vitis_research_project/MobileNetV2/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/vitis_research_project/MobileNetV2/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xczu7ev-ffvc1156-2-e' from D:/vitis_research_project/MobileNetV2/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from D:/vitis_research_project/MobileNetV2/hls_component/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/vitis_research_project/MobileNetV2/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis_research_project/MobileNetV2/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.82 seconds; current allocated memory: 156.750 MB.
+INFO: [HLS 200-10] Analyzing design file 'MobileNetV2.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (MobileNetV2.cpp:109:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file MobileNetV2.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.053 seconds; current allocated memory: 159.426 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,288 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,677 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 630 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 618 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 618 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 631 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 625 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 666 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 707 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 718 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 635 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 623 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 676 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 620 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 635 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 672 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis_research_project/MobileNetV2/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_86_5' is marked as complete unroll implied by the pipeline pragma (MobileNetV2.cpp:86:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_34_4' is marked as complete unroll implied by the pipeline pragma (MobileNetV2.cpp:34:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_40_5' is marked as complete unroll implied by the pipeline pragma (MobileNetV2.cpp:40:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_41_6' is marked as complete unroll implied by the pipeline pragma (MobileNetV2.cpp:41:38)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_50_7' is marked as complete unroll implied by the pipeline pragma (MobileNetV2.cpp:50:38)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_51_8' is marked as complete unroll implied by the pipeline pragma (MobileNetV2.cpp:51:42)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_86_5' (MobileNetV2.cpp:86:34) in function 'pointwise_conv' completely with a factor of 32 (MobileNetV2.cpp:69:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_34_4' (MobileNetV2.cpp:34:34) in function 'depthwise_conv' completely with a factor of 2 (MobileNetV2.cpp:18:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_40_5' (MobileNetV2.cpp:40:34) in function 'depthwise_conv' completely with a factor of 3 (MobileNetV2.cpp:18:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_41_6' (MobileNetV2.cpp:41:38) in function 'depthwise_conv' completely with a factor of 2 (MobileNetV2.cpp:18:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_7' (MobileNetV2.cpp:50:38) in function 'depthwise_conv' completely with a factor of 3 (MobileNetV2.cpp:18:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_51_8' (MobileNetV2.cpp:51:42) in function 'depthwise_conv' completely with a factor of 3 (MobileNetV2.cpp:18:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'output_tensor'. (MobileNetV2.cpp:103:0)
+INFO: [HLS 214-248] Applying array_partition to 'line_buffer': Complete partitioning on dimension 1. (MobileNetV2.cpp:20:12)
+INFO: [HLS 214-241] Aggregating bram variable 'pw_weights' with compact=bit mode in 16-bits (MobileNetV2.cpp:103:0)
+INFO: [HLS 214-241] Aggregating bram variable 'dw_weights' with compact=bit mode in 16-bits (MobileNetV2.cpp:103:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_117_1> at MobileNetV2.cpp:117:23 
+INFO: [HLS 214-449] Automatically partitioning array 'line_buffer' dimension 1 completely based on constant index. (MobileNetV2.cpp:20:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buffer_0' due to pipeline pragma (MobileNetV2.cpp:20:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buffer_0': Complete partitioning on dimension 1. (MobileNetV2.cpp:20:12)
+INFO: [HLS 214-115] Multiple burst reads of length 100352 and bit width 16 in loop 'VITIS_LOOP_117_1'(MobileNetV2.cpp:117:23) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (MobileNetV2.cpp:117:23)
+INFO: [HLS 214-455] Changing loop 'Loop_VITIS_LOOP_117_1_proc' (MobileNetV2.cpp:117:23) to a process function for dataflow in function 'mobilenetv2_block' (MobileNetV2.cpp:117:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.376 seconds; current allocated memory: 162.039 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 162.039 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 167.137 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 169.434 MB.
+WARNING: [HLS 200-805] An internal stream 'input_stream' (MobileNetV2.cpp:116) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'mobilenetv2_block' (MobileNetV2.cpp:98:1), detected/extracted 3 process function(s): 
+	 'Loop_VITIS_LOOP_117_1_proc'
+	 'depthwise_conv'
+	 'pointwise_conv'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.843 seconds; current allocated memory: 191.434 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_28_2'(MobileNetV2.cpp:28:26) and 'VITIS_LOOP_29_3'(MobileNetV2.cpp:29:30) in function 'depthwise_conv' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_27_1'(MobileNetV2.cpp:27:19) and 'VITIS_LOOP_28_2'(MobileNetV2.cpp:28:26) in function 'depthwise_conv' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_28_2' (MobileNetV2.cpp:28:26) in function 'depthwise_conv'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (MobileNetV2.cpp:27:19) in function 'depthwise_conv'.
+WARNING: [HLS 200-1449] Process depthwise_conv has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+WARNING: [HLS 200-1449] Process pointwise_conv has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.178 seconds; current allocated memory: 229.906 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'mobilenetv2_block' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_VITIS_LOOP_117_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_1'.
+INFO: [HLS 200-876] Unable to schedule the whole 8 cycles bus request operation ('empty', MobileNetV2.cpp:117) on port 'gmem0' (MobileNetV2.cpp:117) within the first cycle (II = 1). Simulation mismatch may occur if the input data is modified before this operation completes.
+Resolution: For help on HLS 200-876 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-876.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 11, loop 'VITIS_LOOP_117_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.986 seconds; current allocated memory: 233.398 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 234.480 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'depthwise_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln52_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln52_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln52_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln52_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln52_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln52_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln52_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln52) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2_VITIS_LOOP_29_3'.
+WARNING: [HLS 200-885] The II Violation in module 'depthwise_conv' (loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2_VITIS_LOOP_29_3'): Unable to schedule 'load' operation 16 bit ('dw_weights_load_2', MobileNetV2.cpp:52) on array 'dw_weights' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'dw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'depthwise_conv' (loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2_VITIS_LOOP_29_3'): Unable to schedule 'load' operation 16 bit ('dw_weights_load_3', MobileNetV2.cpp:52) on array 'dw_weights' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'dw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'depthwise_conv' (loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2_VITIS_LOOP_29_3'): Unable to schedule 'load' operation 16 bit ('dw_weights_load_5', MobileNetV2.cpp:52) on array 'dw_weights' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'dw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'depthwise_conv' (loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2_VITIS_LOOP_29_3'): Unable to schedule 'load' operation 16 bit ('dw_weights_load_7', MobileNetV2.cpp:52) on array 'dw_weights' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'dw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 5, Depth = 13, loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2_VITIS_LOOP_29_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.932 seconds; current allocated memory: 236.426 MB.
+INFO: [#UNDEF] Rewind delay = 4 for the pipelined loop 'VITIS_LOOP_27_1_VITIS_LOOP_28_2_VITIS_LOOP_29_3' to synchronize the reading of port 'dw_weights' with ap_ready.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.052 seconds; current allocated memory: 236.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pointwise_conv_Pipeline_VITIS_LOOP_77_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_77_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_77_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 236.938 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.72 seconds; current allocated memory: 236.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pointwise_conv_Pipeline_VITIS_LOOP_83_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln87) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_83_4'.
+WARNING: [HLS 200-885] The II Violation in module 'pointwise_conv_Pipeline_VITIS_LOOP_83_4' (loop 'VITIS_LOOP_83_4'): Unable to schedule 'load' operation 16 bit ('pw_weights_load_2', MobileNetV2.cpp:87) on array 'pw_weights' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'pw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'pointwise_conv_Pipeline_VITIS_LOOP_83_4' (loop 'VITIS_LOOP_83_4'): Unable to schedule 'load' operation 16 bit ('pw_weights_load_3', MobileNetV2.cpp:87) on array 'pw_weights' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'pw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'pointwise_conv_Pipeline_VITIS_LOOP_83_4' (loop 'VITIS_LOOP_83_4'): Unable to schedule 'load' operation 16 bit ('pw_weights_load_5', MobileNetV2.cpp:87) on array 'pw_weights' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'pw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'pointwise_conv_Pipeline_VITIS_LOOP_83_4' (loop 'VITIS_LOOP_83_4'): Unable to schedule 'load' operation 16 bit ('pw_weights_load_7', MobileNetV2.cpp:87) on array 'pw_weights' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'pw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'pointwise_conv_Pipeline_VITIS_LOOP_83_4' (loop 'VITIS_LOOP_83_4'): Unable to schedule 'load' operation 16 bit ('pw_weights_load_21', MobileNetV2.cpp:87) on array 'pw_weights' due to limited memory ports (II = 11). Please consider using a memory core with more ports or partitioning the array 'pw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'pointwise_conv_Pipeline_VITIS_LOOP_83_4' (loop 'VITIS_LOOP_83_4'): Unable to schedule 'load' operation 16 bit ('pw_weights_load_29', MobileNetV2.cpp:87) on array 'pw_weights' due to limited memory ports (II = 15). Please consider using a memory core with more ports or partitioning the array 'pw_weights'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 41, loop 'VITIS_LOOP_83_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.154 seconds; current allocated memory: 239.543 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 240.254 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pointwise_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.131 seconds; current allocated memory: 240.945 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 241.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mobilenetv2_block' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 241.496 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 241.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_VITIS_LOOP_117_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'Loop_VITIS_LOOP_117_1_proc' pipeline 'VITIS_LOOP_117_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_VITIS_LOOP_117_1_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 243.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'depthwise_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'depthwise_conv' pipeline 'VITIS_LOOP_27_1_VITIS_LOOP_28_2_VITIS_LOOP_29_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24ns_24_4_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'depthwise_conv'.
+INFO: [RTMG 210-278] Implementing memory 'mobilenetv2_block_depthwise_conv_line_buffer_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.142 seconds; current allocated memory: 247.340 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pointwise_conv_Pipeline_VITIS_LOOP_77_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pointwise_conv_Pipeline_VITIS_LOOP_77_3' pipeline 'VITIS_LOOP_77_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv_Pipeline_VITIS_LOOP_77_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 252.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pointwise_conv_Pipeline_VITIS_LOOP_83_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pointwise_conv_Pipeline_VITIS_LOOP_83_4' pipeline 'VITIS_LOOP_83_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_24ns_24_4_1': 31 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv_Pipeline_VITIS_LOOP_83_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.167 seconds; current allocated memory: 255.137 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pointwise_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pointwise_conv'.
+INFO: [RTMG 210-278] Implementing memory 'mobilenetv2_block_pointwise_conv_pixel_channels_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.421 seconds; current allocated memory: 263.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mobilenetv2_block' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mobilenetv2_block/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mobilenetv2_block/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mobilenetv2_block/input_tensor' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mobilenetv2_block/output_tensor' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mobilenetv2_block/dw_weights' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mobilenetv2_block/pw_weights' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'mobilenetv2_block' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_tensor', 'output_tensor' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mobilenetv2_block'.
+INFO: [RTMG 210-285] Implementing FIFO 'input_stream_U(mobilenetv2_block_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'internal_fifo_U(mobilenetv2_block_fifo_w16_d64_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 265.109 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.329 seconds; current allocated memory: 268.758 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.676 seconds; current allocated memory: 278.020 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for mobilenetv2_block.
+INFO: [VLOG 209-307] Generating Verilog RTL for mobilenetv2_block.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 2 seconds. Total elapsed time: 28.33 seconds; peak allocated memory: 278.062 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 35s

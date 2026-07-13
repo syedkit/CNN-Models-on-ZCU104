@@ -1,0 +1,122 @@
+{
+    "1": {
+        "name": "pointwise_conv_Pipeline_VITIS_LOOP_83_4",
+        "file": "MobileNetV2.cpp",
+        "fileloc": "83",
+        "instructions": "384",
+        "total_instructions": "384",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "39",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2",
+            "T": "32"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "depthwise_conv",
+        "file": "MobileNetV2.cpp",
+        "fileloc": "15",
+        "instructions": "215",
+        "total_instructions": "215",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "55",
+        "control_depth": "5",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "22",
+            "T": "9"
+        },
+        "stores": {
+            "L": "27"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "pointwise_conv",
+        "file": "MobileNetV2.cpp",
+        "fileloc": "66",
+        "instructions": "98",
+        "total_instructions": "500",
+        "calls": "5 1",
+        "basicblocks": "7",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "34"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "4": {
+        "name": "_Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4__",
+        "file": "MobileNetV2.cpp",
+        "fileloc": "0",
+        "instructions": "24",
+        "total_instructions": "24",
+        "calls": "",
+        "basicblocks": "5",
+        "memory_accesses": "5",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "mobilenetv2_block",
+        "file": "MobileNetV2.cpp",
+        "fileloc": "98",
+        "instructions": "27",
+        "total_instructions": "766",
+        "calls": "4 2 3",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "5": {
+        "name": "pointwise_conv_Pipeline_VITIS_LOOP_77_3",
+        "file": "MobileNetV2.cpp",
+        "fileloc": "77",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

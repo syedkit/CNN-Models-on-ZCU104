@@ -1,0 +1,50 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "1 2",
+    "control_depth": 1,
+    "def_use_depth": 2,
+    "file": "MobileNetV2.cpp",
+    "fileloc": 98,
+    "instructions": 31,
+    "memory_accesses": 1,
+    "name": "mobilenetv2_block",
+    "total_instructions": 1288
+  },
+  "1": {
+    "basicblocks": 55,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 3,
+    "file": "MobileNetV2.cpp",
+    "fileloc": 14,
+    "instructions": 173,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 6,
+    "name": "depthwise_conv",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 737
+  },
+  "2": {
+    "basicblocks": 31,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "MobileNetV2.cpp",
+    "fileloc": 65,
+    "instructions": 93,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 5,
+    "name": "pointwise_conv",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 514
+  }
+}

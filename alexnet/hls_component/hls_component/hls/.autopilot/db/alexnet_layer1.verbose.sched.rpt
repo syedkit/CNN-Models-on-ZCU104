@@ -1,0 +1,251 @@
+
+
+================================================================
+== Vitis HLS Report for 'alexnet_layer1'
+================================================================
+* Date:           Mon Mar 30 19:48:39 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        hls_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +-----------+-----------+-----------+-----------+-----------+-----------+---------+
+    |    Latency (cycles)   |   Latency (absolute)  |        Interval       | Pipeline|
+    |    min    |    max    |    min    |    max    |    min    |    max    |   Type  |
+    +-----------+-----------+-----------+-----------+-----------+-----------+---------+
+    |  110967665|  110967665|  1.110 sec|  1.110 sec|  110967666|  110967666|       no|
+    +-----------+-----------+-----------+-----------+-----------+-----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 14 [1/1] (1.00ns)   --->   "%bias_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %bias"   --->   Operation 14 'read' 'bias_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 15 [1/1] (1.00ns)   --->   "%weights_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %weights"   --->   Operation 15 'read' 'weights_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 16 [1/1] (1.00ns)   --->   "%output_feat_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %output_feat"   --->   Operation 16 'read' 'output_feat_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 17 [1/1] (1.00ns)   --->   "%input_img_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %input_img"   --->   Operation 17 'read' 'input_img_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%local_weights = alloca i64 1" [alexnet.cpp:29]   --->   Operation 18 'alloca' 'local_weights' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%local_weights_1 = alloca i64 1" [alexnet.cpp:29]   --->   Operation 19 'alloca' 'local_weights_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%local_weights_2 = alloca i64 1" [alexnet.cpp:29]   --->   Operation 20 'alloca' 'local_weights_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%local_bias = alloca i64 1" [alexnet.cpp:30]   --->   Operation 21 'alloca' 'local_bias' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %weights_read, i32 1, i32 63" [alexnet.cpp:36]   --->   Operation 22 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln36_1 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %bias_read, i32 1, i32 63" [alexnet.cpp:36]   --->   Operation 23 'partselect' 'trunc_ln36_1' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%sext_ln36 = sext i63 %trunc_ln" [alexnet.cpp:36]   --->   Operation 24 'sext' 'sext_ln36' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%gmem2_addr = getelementptr i16 %gmem2, i64 %sext_ln36" [alexnet.cpp:36]   --->   Operation 25 'getelementptr' 'gmem2_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem2_addr, i64 34848" [alexnet.cpp:36]   --->   Operation 26 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%sext_ln36_1 = sext i63 %trunc_ln36_1" [alexnet.cpp:36]   --->   Operation 27 'sext' 'sext_ln36_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%gmem3_addr = getelementptr i16 %gmem3, i64 %sext_ln36_1" [alexnet.cpp:36]   --->   Operation 28 'getelementptr' 'gmem3_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [8/8] (7.30ns)   --->   "%empty_126 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem3_addr, i64 96" [alexnet.cpp:36]   --->   Operation 29 'readreq' 'empty_126' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 30 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem2_addr, i64 34848" [alexnet.cpp:36]   --->   Operation 30 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_3 : Operation 31 [7/8] (7.30ns)   --->   "%empty_126 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem3_addr, i64 96" [alexnet.cpp:36]   --->   Operation 31 'readreq' 'empty_126' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 32 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem2_addr, i64 34848" [alexnet.cpp:36]   --->   Operation 32 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 33 [6/8] (7.30ns)   --->   "%empty_126 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem3_addr, i64 96" [alexnet.cpp:36]   --->   Operation 33 'readreq' 'empty_126' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 34 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem2_addr, i64 34848" [alexnet.cpp:36]   --->   Operation 34 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 35 [5/8] (7.30ns)   --->   "%empty_126 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem3_addr, i64 96" [alexnet.cpp:36]   --->   Operation 35 'readreq' 'empty_126' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 36 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem2_addr, i64 34848" [alexnet.cpp:36]   --->   Operation 36 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 37 [4/8] (7.30ns)   --->   "%empty_126 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem3_addr, i64 96" [alexnet.cpp:36]   --->   Operation 37 'readreq' 'empty_126' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 38 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem2_addr, i64 34848" [alexnet.cpp:36]   --->   Operation 38 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 39 [3/8] (7.30ns)   --->   "%empty_126 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem3_addr, i64 96" [alexnet.cpp:36]   --->   Operation 39 'readreq' 'empty_126' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 40 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem2_addr, i64 34848" [alexnet.cpp:36]   --->   Operation 40 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 41 [2/8] (7.30ns)   --->   "%empty_126 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem3_addr, i64 96" [alexnet.cpp:36]   --->   Operation 41 'readreq' 'empty_126' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 42 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem2_addr, i64 34848" [alexnet.cpp:36]   --->   Operation 42 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 43 [1/8] (7.30ns)   --->   "%empty_126 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %gmem3_addr, i64 96" [alexnet.cpp:36]   --->   Operation 43 'readreq' 'empty_126' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 44 [2/2] (0.00ns)   --->   "%call_ln36 = call void @alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO, i16 %gmem3, i16 %gmem2, i16 %local_weights, i16 %local_weights_1, i16 %local_weights_2, i63 %trunc_ln, i63 %trunc_ln36_1, i16 %local_bias" [alexnet.cpp:36]   --->   Operation 44 'call' 'call_ln36' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 45 [1/2] (0.00ns)   --->   "%call_ln36 = call void @alexnet_layer1_Pipeline_VITIS_LOOP_36_1_VITIS_LOOP_38_2_VITIS_LOOP_39_3_VITIS_LO, i16 %gmem3, i16 %gmem2, i16 %local_weights, i16 %local_weights_1, i16 %local_weights_2, i63 %trunc_ln, i63 %trunc_ln36_1, i16 %local_bias" [alexnet.cpp:36]   --->   Operation 45 'call' 'call_ln36' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 46 [2/2] (0.00ns)   --->   "%call_ln0 = call void @alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7, i16 %gmem1, i16 %gmem0, i64 %input_img_read, i16 %local_weights, i16 %local_weights_1, i16 %local_weights_2, i16 %local_bias, i64 %output_feat_read"   --->   Operation 46 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 1.31>
+ST_13 : Operation 47 [1/1] (0.00ns)   --->   "%spectopmodule_ln14 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_14" [alexnet.cpp:14]   --->   Operation 47 'spectopmodule' 'spectopmodule_ln14' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 48 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 48 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 49 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %gmem0"   --->   Operation 49 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 50 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_3, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 50 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 51 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %gmem1"   --->   Operation 51 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 52 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 52 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 53 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %gmem2"   --->   Operation 53 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem3, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_5, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 54 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 55 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %gmem3"   --->   Operation 55 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_img, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_7, void @empty_8, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_img, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %output_feat, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_7, void @empty_11, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %output_feat, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_7, void @empty_12, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %bias, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_7, void @empty_13, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %bias, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 63 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_7, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 65 [1/2] (1.31ns)   --->   "%call_ln0 = call void @alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7, i16 %gmem1, i16 %gmem0, i64 %input_img_read, i16 %local_weights, i16 %local_weights_1, i16 %local_weights_2, i16 %local_bias, i64 %output_feat_read"   --->   Operation 65 'call' 'call_ln0' <Predicate = true> <Delay = 1.31> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 66 [1/1] (0.00ns)   --->   "%ret_ln79 = ret" [alexnet.cpp:79]   --->   Operation 66 'ret' 'ret_ln79' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.000ns
+The critical path consists of the following:
+	s_axi read operation ('bias_read') on port 'bias' [27]  (1.000 ns)
+
+ <State 2>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 16 bit ('gmem2_addr', alexnet.cpp:36) [37]  (0.000 ns)
+	bus request operation ('empty', alexnet.cpp:36) on port 'gmem2' (alexnet.cpp:36) [38]  (7.300 ns)
+
+ <State 3>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', alexnet.cpp:36) on port 'gmem2' (alexnet.cpp:36) [38]  (7.300 ns)
+
+ <State 4>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', alexnet.cpp:36) on port 'gmem2' (alexnet.cpp:36) [38]  (7.300 ns)
+
+ <State 5>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', alexnet.cpp:36) on port 'gmem2' (alexnet.cpp:36) [38]  (7.300 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', alexnet.cpp:36) on port 'gmem2' (alexnet.cpp:36) [38]  (7.300 ns)
+
+ <State 7>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', alexnet.cpp:36) on port 'gmem2' (alexnet.cpp:36) [38]  (7.300 ns)
+
+ <State 8>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', alexnet.cpp:36) on port 'gmem2' (alexnet.cpp:36) [38]  (7.300 ns)
+
+ <State 9>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', alexnet.cpp:36) on port 'gmem2' (alexnet.cpp:36) [38]  (7.300 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 1.311ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'alexnet_layer1_Pipeline_VITIS_LOOP_49_5_VITIS_LOOP_50_6_VITIS_LOOP_51_7' [44]  (1.311 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,90 @@
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:2265:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:2265:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:2279:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:2279:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:2293:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:2293:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:4249:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:4249:7: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6347:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for (int ch = 0; ch < 32; ch++) {
+ ^~~
+ VITIS_LOOP_27_1: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6347:2: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6348:9: warning: Added loop label VITIS_LOOP_28_2:   [xilinx-label-all-loops]
+        for (int r = 0; r < 56; r++) {
+        ^~~
+        VITIS_LOOP_28_2: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6348:9: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6349:13: warning: Added loop label VITIS_LOOP_29_3:   [xilinx-label-all-loops]
+            for (int c = 0; c < 56; c++) {
+            ^~~
+            VITIS_LOOP_29_3: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6349:13: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6354:17: warning: Added loop label VITIS_LOOP_34_4:   [xilinx-label-all-loops]
+                for (int i = 0; i < 3 - 1; i++) {
+                ^~~
+                VITIS_LOOP_34_4: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6354:17: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6360:17: warning: Added loop label VITIS_LOOP_40_5:   [xilinx-label-all-loops]
+                for (int i = 0; i < 3; i++) {
+                ^~~
+                VITIS_LOOP_40_5: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6360:17: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6361:21: warning: Added loop label VITIS_LOOP_41_6:   [xilinx-label-all-loops]
+                    for (int j = 0; j < 3 - 1; j++) {
+                    ^~~
+                    VITIS_LOOP_41_6: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6361:21: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6370:21: warning: Added loop label VITIS_LOOP_50_7:   [xilinx-label-all-loops]
+                    for (int kr = 0; kr < 3; kr++) {
+                    ^~~
+                    VITIS_LOOP_50_7: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6370:21: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6371:25: warning: Added loop label VITIS_LOOP_51_8:   [xilinx-label-all-loops]
+                        for (int kc = 0; kc < 3; kc++) {
+                        ^~~
+                        VITIS_LOOP_51_8: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6371:25: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6392:5: warning: Added loop label VITIS_LOOP_72_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < 56 - 2; r++) {
+    ^~~
+    VITIS_LOOP_72_1: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6392:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6393:9: warning: Added loop label VITIS_LOOP_73_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < 56 - 2; c++) {
+        ^~~
+        VITIS_LOOP_73_2: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6393:9: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6397:13: warning: Added loop label VITIS_LOOP_77_3:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < 32; ch++) {
+            ^~~
+            VITIS_LOOP_77_3: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6397:13: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6403:13: warning: Added loop label VITIS_LOOP_83_4:   [xilinx-label-all-loops]
+            for (int oc = 0; oc < 32; oc++) {
+            ^~~
+            VITIS_LOOP_83_4: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6403:13: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6406:17: warning: Added loop label VITIS_LOOP_86_5:   [xilinx-label-all-loops]
+                for (int ic = 0; ic < 32; ic++) {
+                ^~~
+                VITIS_LOOP_86_5: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6406:17: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6441:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for(int i=0; i<32*56*56; i++) input_stream.write(input_tensor[i]);
+    ^~~
+    VITIS_LOOP_117_1: 
+D:\vitis_research_project\MobileNetV2\hls_component\hls_component\hls\.autopilot\db\MobileNetV2.pp.0.cpp:6441:5: note: FIX-IT applied suggested code changes

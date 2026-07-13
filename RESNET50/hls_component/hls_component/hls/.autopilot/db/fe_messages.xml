@@ -1,0 +1,33 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=resnet50_bottleneck" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ResNet50.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input_tensor offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ResNet50.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output_tensor offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ResNet50.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=w_1x1_a offset=slave bundle=gmem2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ResNet50.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=w_3x3 offset=slave bundle=gmem3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ResNet50.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=w_1x1_b offset=slave bundle=gmem4" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ResNet50.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ResNet50.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=skip_connection_fifo depth=1024" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ResNet50.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ResNet50.cpp:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resnet50_bottleneck" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

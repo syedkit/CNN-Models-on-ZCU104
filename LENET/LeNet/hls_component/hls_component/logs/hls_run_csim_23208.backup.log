@@ -1,0 +1,182 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/vitis_research_project/lenet/LeNet/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis_research_project/lenet/LeNet/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/vitis_research_project/lenet/LeNet/hls_component/hls_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/vitis_research_project/lenet/LeNet/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=lenet_c_code.cpp' from D:/vitis_research_project/lenet/LeNet/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/vitis_research_project/lenet/LeNet/hls_component/lenet_c_code.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=lenet_tb.cpp' from D:/vitis_research_project/lenet/LeNet/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'D:/vitis_research_project/lenet/LeNet/hls_component/lenet_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/vitis_research_project/lenet/LeNet/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xczu7ev-ffvc1156-2-e' from D:/vitis_research_project/lenet/LeNet/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from D:/vitis_research_project/lenet/LeNet/hls_component/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/vitis_research_project/lenet/LeNet/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis_research_project/lenet/LeNet/hls_component/hls_component/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../lenet_tb.cpp in debug mode
+csim.mk:88: recipe for target 'obj/lenet_tb.o' failed
+In file included from ../../../../lenet_tb.cpp:2:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_fixed.h:9:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+../../../../lenet_tb.cpp:27:44: error: use of overloaded operator '/' is ambiguous (with operand types 'data_t' (aka 'ap_fixed<16, 8>') and 'float')
+        input_image[i] = (data_t)(i % 256) / 256.0f; // Normalized pixel values
+                         ~~~~~~~~~~~~~~~~~ ^ ~~~~~~
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2373:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(bool, 1, false)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2374:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(char, 8, CHAR_IS_SIGNED)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2375:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(signed char, 8, true)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2376:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned char, 8, false)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2377:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(short, _AP_SIZE_short, true)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2378:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned short, _AP_SIZE_short, false)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2379:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(int, _AP_SIZE_int, true)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2380:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned int, _AP_SIZE_int, false)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2381:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(long, _AP_SIZE_long, true)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2382:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned long, _AP_SIZE_long, false)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2383:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(ap_slong, _AP_SIZE_ap_slong, true)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2384:1: note: candidate function [with _AP_W = 16, _AP_I = 8, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(ap_ulong, _AP_SIZE_ap_slong, false)
+^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2349:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+  ^
+C:/Xilinx/2025.1/Vitis/include/etc/ap_fixed_base.h:2294:3: note: expanded from macro 'AF_BIN_OP_WITH_INT'
+  operator BIN_OP(                                                          \
+  ^
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(float, float)
+        input_image[i] = (data_t)(i % 256) / 256.0f; // Normalized pixel values
+                                           ^
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(double, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(long double, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(__float128, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(int, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(long, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(long long, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(__int128, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(unsigned int, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(unsigned long, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(unsigned long long, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(unsigned __int128, float)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(float, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(double, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(long double, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(__float128, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(int, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(long, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(long long, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(__int128, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(unsigned int, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(unsigned long, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(unsigned long long, double)
+../../../../lenet_tb.cpp:27:44: note: built-in candidate operator/(unsigned __int128, double)
+1 warning and 1 error generated.
+make: *** [obj/lenet_tb.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 9.819 seconds; peak allocated memory: 159.676 MB.

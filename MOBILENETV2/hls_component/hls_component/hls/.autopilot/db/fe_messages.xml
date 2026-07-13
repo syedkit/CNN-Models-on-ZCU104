@@ -1,0 +1,100 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:109:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="depthwise_conv" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buffer complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="depthwise_conv" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="depthwise_conv" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pointwise_conv" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="mobilenetv2_block" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mobilenetv2_block" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:104:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mobilenetv2_block" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input_tensor offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:105:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mobilenetv2_block" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output_tensor offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:106:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mobilenetv2_block" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mobilenetv2_block" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mobilenetv2_block" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=internal_fifo depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MobileNetV2.cpp:86:34" msg_body="Loop 'VITIS_LOOP_86_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_86_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MobileNetV2.cpp:34:34" msg_body="Loop 'VITIS_LOOP_34_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_34_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MobileNetV2.cpp:40:34" msg_body="Loop 'VITIS_LOOP_40_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_40_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MobileNetV2.cpp:41:38" msg_body="Loop 'VITIS_LOOP_41_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_41_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MobileNetV2.cpp:50:38" msg_body="Loop 'VITIS_LOOP_50_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_50_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="MobileNetV2.cpp:51:42" msg_body="Loop 'VITIS_LOOP_51_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_51_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="MobileNetV2.cpp:69:0" msg_body="Unrolling loop 'VITIS_LOOP_86_5' (MobileNetV2.cpp:86:34) in function 'pointwise_conv' completely with a factor of 32">
+        <args Factor="32" LoopLoc="MobileNetV2.cpp:86:34" LoopName="VITIS_LOOP_86_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="MobileNetV2.cpp:18:0" msg_body="Unrolling loop 'VITIS_LOOP_34_4' (MobileNetV2.cpp:34:34) in function 'depthwise_conv' completely with a factor of 2">
+        <args Factor="2" LoopLoc="MobileNetV2.cpp:34:34" LoopName="VITIS_LOOP_34_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="MobileNetV2.cpp:18:0" msg_body="Unrolling loop 'VITIS_LOOP_40_5' (MobileNetV2.cpp:40:34) in function 'depthwise_conv' completely with a factor of 3">
+        <args Factor="3" LoopLoc="MobileNetV2.cpp:40:34" LoopName="VITIS_LOOP_40_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="MobileNetV2.cpp:18:0" msg_body="Unrolling loop 'VITIS_LOOP_41_6' (MobileNetV2.cpp:41:38) in function 'depthwise_conv' completely with a factor of 2">
+        <args Factor="2" LoopLoc="MobileNetV2.cpp:41:38" LoopName="VITIS_LOOP_41_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="MobileNetV2.cpp:18:0" msg_body="Unrolling loop 'VITIS_LOOP_50_7' (MobileNetV2.cpp:50:38) in function 'depthwise_conv' completely with a factor of 3">
+        <args Factor="3" LoopLoc="MobileNetV2.cpp:50:38" LoopName="VITIS_LOOP_50_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="MobileNetV2.cpp:18:0" msg_body="Unrolling loop 'VITIS_LOOP_51_8' (MobileNetV2.cpp:51:42) in function 'depthwise_conv' completely with a factor of 3">
+        <args Factor="3" LoopLoc="MobileNetV2.cpp:51:42" LoopName="VITIS_LOOP_51_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="MobileNetV2.cpp:103:0" msg_body="Skipping array undecay on variable length array 'output_tensor'.">
+        <args ArrayName="output_tensor"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="MobileNetV2.cpp:20:12" msg_body="Applying array_partition to 'line_buffer': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buffer"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MobileNetV2.cpp:103:0" msg_body="Aggregating bram variable 'pw_weights' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="pw_weights"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="MobileNetV2.cpp:103:0" msg_body="Aggregating bram variable 'dw_weights' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="dw_weights"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="MobileNetV2.cpp:20:12" msg_body="Automatically partitioning array 'line_buffer' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="line_buffer"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="MobileNetV2.cpp:20:12" msg_body="array_partition dim=1 type=complete  variable=line_buffer_0 1 depthwise_conv MobileNetV2.cpp:20:12 line_buffer_0">
+        <args PragmaFunction="depthwise_conv" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buffer_0" PragmaType="array_partition" VarName="line_buffer_0" varLoc="MobileNetV2.cpp:20:12"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="MobileNetV2.cpp:20:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buffer_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buffer_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="MobileNetV2.cpp:20:12" msg_body="Applying array_partition to 'line_buffer_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buffer_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-455" msg_severity="INFO" msg_loc="MobileNetV2.cpp:117:23" msg_body="Changing loop 'Loop_VITIS_LOOP_117_1_proc' (MobileNetV2.cpp:117:23) to a process function for dataflow in function 'mobilenetv2_block'">
+        <args LoopLoc="MobileNetV2.cpp:117:23" LoopName="Loop_VITIS_LOOP_117_1_proc" Name="mobilenetv2_block"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

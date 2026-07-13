@@ -1,0 +1,70 @@
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:2265:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:2265:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:2279:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:2279:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:2293:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:2293:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:4249:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:4249:7: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6231:2: warning: Added loop label VITIS_LOOP_36_1:   [xilinx-label-all-loops]
+ for(int oc=0; oc<96; oc++) {
+ ^~~
+ VITIS_LOOP_36_1: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6231:2: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6233:9: warning: Added loop label VITIS_LOOP_38_2:   [xilinx-label-all-loops]
+        for(int ic=0; ic<3; ic++) {
+        ^~~
+        VITIS_LOOP_38_2: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6233:9: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6234:13: warning: Added loop label VITIS_LOOP_39_3:   [xilinx-label-all-loops]
+            for(int kr=0; kr<11; kr++) {
+            ^~~
+            VITIS_LOOP_39_3: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6234:13: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6235:17: warning: Added loop label VITIS_LOOP_40_4:   [xilinx-label-all-loops]
+                for(int kc=0; kc<11; kc++) {
+                ^~~
+                VITIS_LOOP_40_4: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6235:17: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6244:5: warning: Added loop label VITIS_LOOP_49_5:   [xilinx-label-all-loops]
+    for (int r = 0; r < 55; r++) {
+    ^~~
+    VITIS_LOOP_49_5: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6244:5: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6245:9: warning: Added loop label VITIS_LOOP_50_6:   [xilinx-label-all-loops]
+        for (int c = 0; c < 55; c++) {
+        ^~~
+        VITIS_LOOP_50_6: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6245:9: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6246:13: warning: Added loop label VITIS_LOOP_51_7:   [xilinx-label-all-loops]
+            for (int oc = 0; oc < 96; oc++) {
+            ^~~
+            VITIS_LOOP_51_7: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6246:13: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6252:17: warning: Added loop label VITIS_LOOP_57_8:   [xilinx-label-all-loops]
+                for (int ic = 0; ic < 3; ic++) {
+                ^~~
+                VITIS_LOOP_57_8: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6252:17: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6253:21: warning: Added loop label VITIS_LOOP_58_9:   [xilinx-label-all-loops]
+                    for (int kr = 0; kr < 11; kr++) {
+                    ^~~
+                    VITIS_LOOP_58_9: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6253:21: note: FIX-IT applied suggested code changes
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6254:25: warning: Added loop label VITIS_LOOP_59_10:   [xilinx-label-all-loops]
+                        for (int kc = 0; kc < 11; kc++) {
+                        ^~~
+                        VITIS_LOOP_59_10: 
+D:\vitis_research_project\alexnet\hls_component\hls_component\hls\.autopilot\db\alexnet.pp.0.cpp:6254:25: note: FIX-IT applied suggested code changes

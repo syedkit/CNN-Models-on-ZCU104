@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "D:\\vitis_research_project\\lenet\\LeNet\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=lenet_kernel",
+      "-c",
+      "D:\\vitis_research_project\\lenet\\LeNet\\hls_component\\lenet_c_code.cpp"
+    ],
+    "file": "D:\\vitis_research_project\\lenet\\LeNet\\hls_component\\lenet_c_code.cpp"
+  },
+  {
+    "directory": "D:\\vitis_research_project\\lenet\\LeNet\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:\\vitis_research_project\\lenet\\LeNet\\hls_component\\lenet_tb.cpp"
+    ],
+    "file": "D:\\vitis_research_project\\lenet\\LeNet\\hls_component\\lenet_tb.cpp"
+  }
+]

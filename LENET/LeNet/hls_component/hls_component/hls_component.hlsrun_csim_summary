@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls_component.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/30/26 19:29:27",
+ "timestampMillis": "1774879167619",
+ "buildStep": {
+  "cmdId": "715fd792-a811-4a43-b94f-2e1be7cbfa5a",
+  "name": "vitis-run",
+  "logFile": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config D:\\vitis_research_project\\lenet\\LeNet\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "D:\\vitis_research_project\\lenet\\LeNet\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\vitis_research_project\\lenet\\LeNet\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:29:27",
+ "timestampMillis": "1774879167619",
+ "status": {
+  "cmdId": "715fd792-a811-4a43-b94f-2e1be7cbfa5a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/30/26 19:29:34",
+ "timestampMillis": "1774879174918",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\lenet_c_code.cpp",
+     "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\lenet.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/30/26 19:29:34",
+ "timestampMillis": "1774879174920",
+ "buildStep": {
+  "cmdId": "e3bfaf37-8deb-4aef-8470-154fc0b6d2aa",
+  "name": "",
+  "logFile": "D:/vitis_research_project\\lenet\\LeNet\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\vitis_research_project\\lenet\\LeNet\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:29:34",
+ "timestampMillis": "1774879174921",
+ "status": {
+  "cmdId": "e3bfaf37-8deb-4aef-8470-154fc0b6d2aa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:29:56",
+ "timestampMillis": "1774879196129",
+ "status": {
+  "cmdId": "e3bfaf37-8deb-4aef-8470-154fc0b6d2aa",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/30/26 19:29:56",
+ "timestampMillis": "1774879196323",
+ "status": {
+  "cmdId": "715fd792-a811-4a43-b94f-2e1be7cbfa5a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:29:56",
+ "timestampMillis": "1774879196324",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/30/26 19:29:56",
+ "timestampMillis": "1774879196326",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

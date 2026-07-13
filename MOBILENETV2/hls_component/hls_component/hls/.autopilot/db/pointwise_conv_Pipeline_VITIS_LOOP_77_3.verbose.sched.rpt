@@ -1,0 +1,143 @@
+
+
+================================================================
+== Vitis HLS Report for 'pointwise_conv_Pipeline_VITIS_LOOP_77_3'
+================================================================
+* Date:           Mon Mar 30 21:24:48 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        hls_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.838 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_77_3  |       32|       32|         2|          1|          1|    32|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.63>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%ch = alloca i32 1" [MobileNetV2.cpp:77]   --->   Operation 5 'alloca' 'ch' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %internal_fifo, void @empty_11, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.42ns)   --->   "%store_ln77 = store i6 0, i6 %ch" [MobileNetV2.cpp:77]   --->   Operation 7 'store' 'store_ln77' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln77 = br void %for.inc" [MobileNetV2.cpp:77]   --->   Operation 8 'br' 'br_ln77' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%ch_1 = load i6 %ch" [MobileNetV2.cpp:77]   --->   Operation 9 'load' 'ch_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.78ns)   --->   "%icmp_ln77 = icmp_eq  i6 %ch_1, i6 32" [MobileNetV2.cpp:77]   --->   Operation 10 'icmp' 'icmp_ln77' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.78ns)   --->   "%add_ln77 = add i6 %ch_1, i6 1" [MobileNetV2.cpp:77]   --->   Operation 11 'add' 'add_ln77' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln77 = br i1 %icmp_ln77, void %for.inc.split, void %VITIS_LOOP_83_4.exitStub" [MobileNetV2.cpp:77]   --->   Operation 12 'br' 'br_ln77' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.42ns)   --->   "%store_ln77 = store i6 %add_ln77, i6 %ch" [MobileNetV2.cpp:77]   --->   Operation 13 'store' 'store_ln77' <Predicate = (!icmp_ln77)> <Delay = 0.42>
+ST_1 : Operation 22 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 22 'ret' 'ret_ln0' <Predicate = (icmp_ln77)> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 2.83>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln77 = zext i6 %ch_1" [MobileNetV2.cpp:77]   --->   Operation 14 'zext' 'zext_ln77' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%specpipeline_ln78 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [MobileNetV2.cpp:78]   --->   Operation 15 'specpipeline' 'specpipeline_ln78' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%speclooptripcount_ln77 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32" [MobileNetV2.cpp:77]   --->   Operation 16 'speclooptripcount' 'speclooptripcount_ln77' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specloopname_ln77 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13" [MobileNetV2.cpp:77]   --->   Operation 17 'specloopname' 'specloopname_ln77' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] ( I:2.16ns O:2.16ns )   --->   "%internal_fifo_read = read i16 @_ssdm_op_Read.ap_fifo.volatile.i16P0A, i16 %internal_fifo" [MobileNetV2.cpp:79]   --->   Operation 18 'read' 'internal_fifo_read' <Predicate = true> <Delay = 2.16> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 64> <FIFO>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%pixel_channels_addr = getelementptr i16 %pixel_channels, i64 0, i64 %zext_ln77" [MobileNetV2.cpp:79]   --->   Operation 19 'getelementptr' 'pixel_channels_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] ( I:0.67ns O:0.67ns )   --->   "%store_ln79 = store i16 %internal_fifo_read, i5 %pixel_channels_addr" [MobileNetV2.cpp:79]   --->   Operation 20 'store' 'store_ln79' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln77 = br void %for.inc" [MobileNetV2.cpp:77]   --->   Operation 21 'br' 'br_ln77' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.635ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln77', MobileNetV2.cpp:77) of constant 0 on local variable 'ch', MobileNetV2.cpp:77 [5]  (0.427 ns)
+	'load' operation 6 bit ('ch', MobileNetV2.cpp:77) on local variable 'ch', MobileNetV2.cpp:77 [8]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln77', MobileNetV2.cpp:77) [9]  (0.781 ns)
+	'store' operation 0 bit ('store_ln77', MobileNetV2.cpp:77) of variable 'add_ln77', MobileNetV2.cpp:77 on local variable 'ch', MobileNetV2.cpp:77 [20]  (0.427 ns)
+
+ <State 2>: 2.838ns
+The critical path consists of the following:
+	fifo read operation ('internal_fifo_read', MobileNetV2.cpp:79) on port 'internal_fifo' (MobileNetV2.cpp:79) [17]  (2.161 ns)
+	'store' operation 0 bit ('store_ln79', MobileNetV2.cpp:79) of variable 'internal_fifo_read', MobileNetV2.cpp:79 on array 'pixel_channels' [19]  (0.677 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

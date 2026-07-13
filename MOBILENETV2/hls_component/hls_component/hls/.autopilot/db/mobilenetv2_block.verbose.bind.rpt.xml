@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mobilenetv2_block'" level="0">
+<item name = "Date">Mon Mar 30 21:24:54 2026
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">hls_component</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1726402, 1726402, 17.264 ms, 17.264 ms, 1726382, 1726382, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Loop_VITIS_LOOP_117_1_proc_fu_98">Loop_VITIS_LOOP_117_1_proc, 100363, 100363, 1.004 ms, 1.004 ms, 100352, 100352, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_depthwise_conv_fu_107">depthwise_conv, 501769, 501769, 5.018 ms, 5.018 ms, 501760, 501760, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_pointwise_conv_fu_115">pointwise_conv, 1726381, 1726381, 17.264 ms, 17.264 ms, 1726381, 1726381, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

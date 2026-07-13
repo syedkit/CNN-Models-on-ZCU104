@@ -1,0 +1,22 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../lenet_tb.cpp in debug mode
+   Compiling ../../../../lenet_c_code.cpp in debug mode
+   Generating csim.exe
+=======================================
+   Starting LeNet C-Simulation...      
+=======================================
+--- Kernel Output ---
+Digit Class 0: 0
+Digit Class 1: 0.00390625
+Digit Class 2: 0.0078125
+Digit Class 3: 0.0117188
+Digit Class 4: 0.015625
+Digit Class 5: 0.0195313
+Digit Class 6: 0.0234375
+Digit Class 7: 0.0273438
+Digit Class 8: 0.03125
+Digit Class 9: 0.0351563
+Simulation Complete! Hardware is ready for Synthesis.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

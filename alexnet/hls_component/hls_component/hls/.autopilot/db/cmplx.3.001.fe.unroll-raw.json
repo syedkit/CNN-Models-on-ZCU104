@@ -1,0 +1,22 @@
+{
+  "0": {
+    "basicblocks": 6597,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 1093,
+    "file": "alexnet.cpp",
+    "fileloc": 14,
+    "instructions": 14737,
+    "loads": {
+      "L": 364,
+      "T": 365
+    },
+    "memory_accesses": 730,
+    "name": "alexnet_layer1",
+    "stores": {
+      "L": 2,
+      "T": 1
+    },
+    "total_instructions": 14737
+  }
+}

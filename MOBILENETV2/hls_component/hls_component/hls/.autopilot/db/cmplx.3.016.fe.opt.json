@@ -1,0 +1,65 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 2 3",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "MobileNetV2.cpp",
+    "fileloc": 98,
+    "instructions": 26,
+    "memory_accesses": 0,
+    "name": "mobilenetv2_block",
+    "total_instructions": 672
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 2,
+    "file": "MobileNetV2.cpp",
+    "fileloc": 0,
+    "instructions": 18,
+    "memory_accesses": 3,
+    "name": "_Z17mobilenetv2_blockP8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA3_A3_KS2_PA32_S4__",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 18
+  },
+  "2": {
+    "basicblocks": 12,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 30,
+    "file": "MobileNetV2.cpp",
+    "fileloc": 14,
+    "instructions": 164,
+    "loads": {
+      "L": 12
+    },
+    "memory_accesses": 17,
+    "name": "depthwise_conv",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 164
+  },
+  "3": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 97,
+    "file": "MobileNetV2.cpp",
+    "fileloc": 65,
+    "instructions": 464,
+    "loads": {
+      "L": 65
+    },
+    "memory_accesses": 36,
+    "name": "pointwise_conv",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 464
+  }
+}

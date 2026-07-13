@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1775139608">
+  <File Type="PA-TCL" Name="lenet_kernel.tcl"/>
+  <File Type="REPORTS-TCL" Name="lenet_kernel_reports.tcl"/>
+  <File Type="RDS-RDS" Name="lenet_kernel.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="lenet_kernel_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="lenet_kernel_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="lenet_kernel_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="lenet_kernel.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="lenet_kernel_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="lenet_kernel_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../vitis_research_project/lenet/LeNet/hls_component/hls_component/hls/syn/verilog/lenet_kernel_control_r_s_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../vitis_research_project/lenet/LeNet/hls_component/hls_component/hls/syn/verilog/lenet_kernel_control_s_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../vitis_research_project/lenet/LeNet/hls_component/hls_component/hls/syn/verilog/lenet_kernel_flow_control_loop_pipe_sequential_init.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../vitis_research_project/lenet/LeNet/hls_component/hls_component/hls/syn/verilog/lenet_kernel_gmem0_m_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../vitis_research_project/lenet/LeNet/hls_component/hls_component/hls/syn/verilog/lenet_kernel_gmem1_m_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../vitis_research_project/lenet/LeNet/hls_component/hls_component/hls/syn/verilog/lenet_kernel_lenet_kernel_Pipeline_VITIS_LOOP_25_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../vitis_research_project/lenet/LeNet/hls_component/hls_component/hls/syn/verilog/lenet_kernel_lenet_kernel_Pipeline_VITIS_LOOP_31_2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../vitis_research_project/lenet/LeNet/hls_component/hls_component/hls/syn/verilog/lenet_kernel_local_in_RAM_AUTO_1R1W.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../vitis_research_project/lenet/LeNet/hls_component/hls_component/hls/syn/verilog/lenet_kernel.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="lenet_kernel"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

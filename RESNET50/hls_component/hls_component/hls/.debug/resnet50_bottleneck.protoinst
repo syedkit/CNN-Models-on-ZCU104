@@ -1,0 +1,49 @@
+{
+	"version": "1.0",
+	"modules": {
+		"resnet50_bottleneck": {
+			"proto_instances": {
+				"/AESL_inst_resnet50_bottleneck_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst_n"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3_fu_151/grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_40_3_fu_151_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_55_4_fu_161/grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_55_4_fu_161_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_61_5_fu_167/grp_resnet50_bottleneck_Pipeline_VITIS_LOOP_61_5_fu_167_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

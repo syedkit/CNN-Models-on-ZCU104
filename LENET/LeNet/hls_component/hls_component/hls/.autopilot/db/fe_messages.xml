@@ -1,0 +1,30 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="lenet_c_code.cpp:14:19" msg_body="unused parameter 'weights'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="lenet_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=lenet_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lenet_c_code.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lenet_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input_data offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lenet_c_code.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lenet_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output_data offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lenet_c_code.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lenet_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lenet_c_code.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lenet_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_in complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lenet_c_code.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lenet_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lenet_c_code.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="lenet_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="lenet_c_code.cpp:20:9" msg_body="Applying array_partition to 'local_in': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_in"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
